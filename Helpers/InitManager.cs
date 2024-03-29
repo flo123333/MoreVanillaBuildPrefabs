@@ -14,7 +14,7 @@ namespace MVBP.Helpers
     internal static class InitManager
     {
         internal static readonly Dictionary<string, GameObject> PrefabRefs = new();
-        internal static readonly Dictionary<string, Piece> DefaultPieceClones = new();
+        internal static readonly Dictionary<string, Piece.Requirement[]> DefaultResources = new();
         private static Dictionary<string, PieceDB> PieceRefs = new();
         private static readonly Dictionary<string, string> PieceToPrefabMap = new();
 
@@ -51,16 +51,16 @@ namespace MVBP.Helpers
 
         internal static bool HasInitializedPlugin => PrefabRefs.Count > 0;
 
-        internal static bool TryGetDefaultPieceClone(GameObject gameObject, out Piece pieceClone)
+        internal static bool TryGetDefaultPieceResources(GameObject gameObject, out Piece.Requirement[] defaultResources)
         {
             var prefabName = GetPrefabName(gameObject);
-            if (DefaultPieceClones.ContainsKey(prefabName))
+            if (DefaultResources.ContainsKey(prefabName))
             {
-                pieceClone = DefaultPieceClones[prefabName];
+                defaultResources = DefaultResources[prefabName];
                 return true;
             }
 
-            pieceClone = null;
+            defaultResources = null;
 
             return false;
         }
@@ -210,13 +210,14 @@ namespace MVBP.Helpers
                 }
 
                 PrefabRefs.Add(prefab.name, prefab);
+                UpdateDefaultResources(prefab);
             }
 
             Log.LogInfo($"Found {PrefabRefs.Count} prefabs");
 
             Log.LogInfo("Initializing default pieces");
-            // Get a default icon to use if pieceClone doesn't have an icon.
-            // Need this to prevent NRE's if other code references the pieceClone
+            // Get a default icon to use if defaultResources doesn't have an icon.
+            // Need this to prevent NRE's if other code references the defaultResources
             // before the coroutine that is rendering the icons finishes. (Such as PlanBuild)
             var defaultIcon = PrefabManager.Cache.GetPrefab<Sprite>("mapicon_hildir1");
 
@@ -232,6 +233,18 @@ namespace MVBP.Helpers
             Log.LogInfo("Initializing default icons", LogLevel.Medium);
 
             IconHelper.Instance.GeneratePrefabIcons(PrefabRefs.Values);
+        }
+
+        private static void UpdateDefaultResources(GameObject prefab)
+        {
+            if (prefab.TryGetComponent(out Piece piece) && piece.m_resources != null)
+            {
+                DefaultResources.Add(prefab.name, piece.m_resources);
+            }
+            else
+            {
+                DefaultResources.Add(prefab.name, Array.Empty<Piece.Requirement>());
+            }
         }
 
         /// <summary>
@@ -318,8 +331,8 @@ namespace MVBP.Helpers
         }
 
         /// <summary>
-        ///     Create a set of pieceClone refs with each prefab's
-        ///     pieceClone reset to the default state and the PieceDB
+        ///     Create a set of defaultResources refs with each prefab's
+        ///     defaultResources reset to the default state and the PieceDB
         ///     containing the configuration settings to apply.
         /// </summary>
         /// <returns></returns>
@@ -336,7 +349,7 @@ namespace MVBP.Helpers
                         continue;
                     }
 
-                    // reset piece component to match the default pieceClone clone
+                    // reset piece component to match the default defaultResources clone
                     if (prefab.TryGetComponent(out Piece piece))
                     {
                         newPieceRefs.Add(prefab.name, new PieceDB(MorePrefabs.GetPrefabDB(prefab), piece));
@@ -368,7 +381,7 @@ namespace MVBP.Helpers
 
             foreach (var pieceDB in PieceRefs.Values)
             {
-                // Check if pieceClone is enabled by the mod
+                // Check if defaultResources is enabled by the mod
                 if (!pieceDB.enabled && !MorePrefabs.IsForceAllPrefabs)
                 {
                     continue;
@@ -460,7 +473,7 @@ namespace MVBP.Helpers
 
         /// <summary>
         ///     Method to re-initialize the plugin when the configuration
-        ///     has been updated based on whether the pieceClone or placement
+        ///     has been updated based on whether the defaultResources or placement
         ///     settings have been changed for any of the config entries.
         /// </summary>
         /// <param name="msg"></param>
