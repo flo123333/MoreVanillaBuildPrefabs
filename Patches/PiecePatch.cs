@@ -111,8 +111,8 @@ namespace MVBP {
             Log.LogInfo("Dropping resources for MVBP piece", LogLevel.Medium);
 
             // Set resources to defaults is piece is not placed by player (world-generated pieces)
-            if (!piece.IsPlacedByPlayer() && InitManager.TryGetDefaultPieceClone(piece.gameObject, out Piece pieceClone) && pieceClone.m_resources != null) {
-                return pieceClone.m_resources;
+            if (!piece.IsPlacedByPlayer() && InitManager.TryGetDefaultPieceResources(piece.gameObject, out Piece.Requirement[] defaultResources) && defaultResources != null) {
+                return defaultResources;
             }
 
             // Set resources to current piece resources if placed by a player
