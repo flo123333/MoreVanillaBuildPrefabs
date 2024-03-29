@@ -8,6 +8,14 @@
 			<th align="center">Notes</th>
 		</tr>
 		<tr>
+			<td align="center">1.0.7</td>
+			<td align="left">
+				<ul>
+					<li>Turns out I accidentally reintroduced an old bug when doing some optimizations. Have now re-fixed bug where some prefabs that were generated in dungeons would drop non-vanilla drops when destroyed.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
 			<td align="center">1.0.6</td>
 			<td align="left">
 				<ul>
