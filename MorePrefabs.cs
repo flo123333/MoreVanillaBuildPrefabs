@@ -92,7 +92,13 @@ namespace MVBP
 
         private static readonly Dictionary<string, PrefabDBConfig> PrefabDBConfigsMap = new();
 
-        internal static bool IsPrefabConfigEnabled(string prefabName) => PrefabDBConfigsMap[prefabName].enabled.Value;
+        internal static bool IsPrefabConfigEnabled(string prefabName) {
+            if (PrefabDBConfigsMap.ContainsKey(prefabName) && PrefabDBConfigsMap[prefabName].enabled != null)
+            {
+                return PrefabDBConfigsMap[prefabName].enabled.Value;
+            }
+            return false;
+        } 
 
         #endregion Prefab Settings
 
@@ -144,7 +150,8 @@ namespace MVBP
         {
             if (PrefabDBConfigsMap.TryGetValue(prefabName, out PrefabDBConfig prefabDBConfig))
             {
-                return prefabDBConfig.placementPatch.Value;
+                // If null then settings is hidden from users and should always be true.
+                return prefabDBConfig.placementPatch == null || prefabDBConfig.placementPatch.Value;
             }
 
             return false;
