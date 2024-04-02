@@ -153,10 +153,17 @@ namespace MVBP.Helpers
         /// <returns></returns>
         internal static string GetPrefabName(GameObject gameObject)
         {
-            if (!gameObject) { return string.Empty; }
+            if (!gameObject) 
+            { 
+                return string.Empty; 
+            }
 
-            var prefabName = gameObject.name.RemoveSuffix("(Clone)");
-            if (PrefabRefs.ContainsKey(prefabName)) { return prefabName; }
+            var prefabName = gameObject.GetPrefabName();
+     
+            if (PrefabRefs.ContainsKey(prefabName)) 
+            { 
+                return prefabName; 
+            }
 
             if (gameObject.TryGetComponent(out Piece piece) && PieceToPrefabMap.ContainsKey(piece.m_name))
             {
