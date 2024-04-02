@@ -8,6 +8,14 @@
 			<th align="center">Notes</th>
 		</tr>
 		<tr>
+			<td align="center">1.0.8</td>
+			<td align="left">
+				<ul>
+					<li>Fixed a placement bug for corner stairs and cleaned up the code internally.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
 			<td align="center">1.0.7</td>
 			<td align="left">
 				<ul>
