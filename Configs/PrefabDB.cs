@@ -60,5 +60,24 @@ namespace MVBP.Configs {
             this.pieceGroup = pieceGroup;
             this.playerBasePatch = playerBasePatch;
         }
+
+        /// <summary>
+        ///     Update field data based on PrefabDBConfig data.
+        /// </summary>
+        /// <param name="DBConfig"></param>
+        public void Update(PrefabDBConfig DBConfig)
+        {
+            this.enabled = DBConfig.enabled.Value;
+            this.allowedInDungeons = DBConfig.allowedInDungeons.Value;
+            this.category = DBConfig.category.Value;
+            this.craftingStation = DBConfig.craftingStation.Value;
+            this.requirements = DBConfig.requirements.Value;
+
+            // If a config settings is null then it does not show in the config file.
+            // This is to avoid users changing it because it should always be set to true
+            this.placementPatch = DBConfig.placementPatch == null || DBConfig.placementPatch.Value;
+            this.clipEverything = DBConfig.clipEverything == null || DBConfig.clipEverything.Value;
+            this.clipGround = DBConfig.clipGround == null || DBConfig.clipGround.Value;        
+        }
     }
 }
