@@ -94,7 +94,7 @@ namespace MVBP.Configs
                     false,
                     "Set to true to allow piece to clip through everything during placement. Recommended to try this if the piece is not appearing when you go to place it.\n" +
                     "(If this setting fixes the issue please let me know via Github or Discord so I can change the default settings.)"
-                )
+                );
             }
 
             if (!defaultVals.clipGround)
