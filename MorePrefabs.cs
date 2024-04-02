@@ -115,8 +115,6 @@ namespace MVBP
         internal static bool UpdateModSettings { get; set; } = false;
         internal static bool UpdateSeasonalSettings { get; set; } = false;
 
-        internal static readonly HashSet<string> _NeedsCollisionPatch = new();
-
         /// <summary>
         ///     Event hook to set whether a config entry
         ///     for a piece setting has been changed.
@@ -158,13 +156,9 @@ namespace MVBP
         {
             if (PrefabDBConfigsMap.TryGetValue(prefabName, out PrefabDBConfig prefabDBConfig))
             {
-                // If there is no configuration option then always apply the placement patch
-                if (prefabDBConfig.placementPatch == null)
-                {
-                    return true;
-                }
                 return prefabDBConfig.placementPatch.Value;
             }
+
             return false;
         }
 
