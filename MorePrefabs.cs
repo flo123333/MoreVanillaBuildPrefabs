@@ -357,96 +357,35 @@ namespace MVBP
         private static PrefabDBConfig BindNewPrefabDBConfig(GameObject prefab)
         {
             // Get the default configs values to use when creating the config for the first time
-            // This will be overriden by the config file values if they exist
-            string sectionName = prefab.name;
-            PrefabDB defaultPrefabDB = PrefabConfigs.GetDefaultPrefabDB(sectionName);
+            // This will be overridden by the config file values if they exist
+        
+            PrefabDB defaultPrefabDB = PrefabConfigs.GetDefaultPrefabDB(prefab.name);
 
+            // Create new PrefabDBConfig based on values from PrefabDB or Config File 
+            var prefabDBConfig = new PrefabDBConfig(defaultPrefabDB);
 
-            // Create new PrefabDBConfig based on config file 
-            var prefabDBConfig = new PrefabDBConfig();
-
-            prefabDBConfig.enabled = ConfigManager.BindConfig(
-                sectionName,
-                "Enabled",
-                defaultPrefabDB.enabled,
-                "If true then allow this prefab to be built and deconstructed. " +
-                "Note: this setting is ignored if ForceAllPrefabs is true. " +
-                "It is also ignored if the piece category is CreatorShop or Nature " +
-                "and CreativeMode is false.",
-                order: 10
-            );
+            // Set up the events to trigger updates and respond to config changes
             prefabDBConfig.enabled.SettingChanged += PieceSettingChanged;
-  
-            prefabDBConfig.allowedInDungeons = ConfigManager.BindConfig(
-                sectionName,
-                "AllowedInDungeons",
-                defaultPrefabDB.allowedInDungeons,
-                "If true then this prefab can be built inside dungeon zones."
-            );
             prefabDBConfig.allowedInDungeons.SettingChanged += PieceSettingChanged;
-  
-            prefabDBConfig.category = ConfigManager.BindConfig(
-                sectionName,
-                "Category",
-                defaultPrefabDB.category,
-                "A string defining the tab the prefab shows up on in the hammer build table.",
-                HammerCategories.GetAcceptableValueList()
-            );
             prefabDBConfig.category.SettingChanged += PieceSettingChanged;
-  
-            prefabDBConfig.craftingStation = ConfigManager.BindConfig(
-                sectionName,
-                "CraftingStation",
-                defaultPrefabDB.craftingStation,
-                "A string defining the crafting station required to built the prefab.",
-                CraftingStations.GetAcceptableValueList()
-            );
             prefabDBConfig.craftingStation.SettingChanged += PieceSettingChanged;
-      
-            prefabDBConfig.requirements = ConfigManager.BindConfig(
-                sectionName,
-                "Requirements",
-                defaultPrefabDB.requirements,
-                "Resources required to build the prefab. Formatted as: itemID,amount;itemID,amount where itemID is the in-game identifier for the resource and amount is an integer. "
-            );
             prefabDBConfig.requirements.SettingChanged += PieceSettingChanged;
-   
-            // if the prefab is not already set to use the placement patch by default
-            // then add a config option to enable the placement collision patch.
-            if (!defaultPrefabDB.placementPatch)
+    
+            // Some config settings are left as null and hidden from the user
+            // because they should always be set to true.
+            // Check for null values to avoid NRE.
+            if (prefabDBConfig.placementPatch != null)
             {
-                prefabDBConfig.placementPatch = ConfigManager.BindConfig(
-                    sectionName,
-                    "PlacementPatch",
-                    false,
-                    "Set to true to enable collision patching during placement of the piece. " +
-                    "Recommended to try this if the piece is not appearing when you go to place it.\n" +
-                    "(If this setting fixes the issue please let me know via Github or Discord so I can change the default settings.)"
-                );
                 prefabDBConfig.placementPatch.SettingChanged += PlacementSettingChanged;
             }
 
-            if (!defaultPrefabDB.clipEverything)
+            if (prefabDBConfig.clipEverything != null)
             {
-                prefabDBConfig.clipEverything = ConfigManager.BindConfig(
-                    sectionName,
-                    "ClipEverything",
-                    false,
-                    "Set to true to allow piece to clip through everything during placement. Recommended to try this if the piece is not appearing when you go to place it.\n" +
-                    "(If this setting fixes the issue please let me know via Github or Discord so I can change the default settings.)"
-                );
                 prefabDBConfig.clipEverything.SettingChanged += PieceSettingChanged;
             }
 
-            if (!defaultPrefabDB.clipGround)
-            {
-                prefabDBConfig.clipGround = ConfigManager.BindConfig(
-                    sectionName,
-                    "ClipGround",
-                    false,
-                    "Set to true to allow piece to clip through ground during placement.Recommended to try this if the piece is not floating when you try to place it.\n" +
-                    "(If this setting fixes the issue please let me know via Github or Discord so I can change the default settings.)"
-                );
+            if (prefabDBConfig.clipGround != null)
+            { 
                 prefabDBConfig.clipGround.SettingChanged += PieceSettingChanged;
             }
 

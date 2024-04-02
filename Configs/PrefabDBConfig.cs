@@ -1,4 +1,5 @@
 ﻿using BepInEx.Configuration;
+using Jotunn.Configs;
 using System;
 
 namespace MVBP.Configs
@@ -19,6 +20,96 @@ namespace MVBP.Configs
         ///     If internal value is null then setting is hidden from users and should always be applied.
         /// </summary>
         internal bool ApplyPlacementPatch => placementPatch == null || placementPatch.Value;
+
+        /// <summary>
+        ///     Create a PrefabDBConfig and all required config entries based on the
+        ///     default values provided by the PrefabDB argument. Also checks against
+        ///     the existing Config File when binding config entries.
+        /// </summary>
+        /// <param name="defaultVals"></param>
+        public PrefabDBConfig(PrefabDB defaultVals)
+        {
+            string sectionName = defaultVals.name;
+            
+            this.enabled = ConfigManager.BindConfig(
+                sectionName,
+                "Enabled",
+                defaultVals.enabled,
+                "If true then allow this prefab to be built and deconstructed. " +
+                "Note: this setting is ignored if ForceAllPrefabs is true. " +
+                "It is also ignored if the piece category is CreatorShop or Nature " +
+                "and CreativeMode is false.",
+                order: 10
+            );
+      
+            this.allowedInDungeons = ConfigManager.BindConfig(
+                sectionName,
+                "AllowedInDungeons",
+                defaultVals.allowedInDungeons,
+                "If true then this prefab can be built inside dungeon zones."
+            );
+    
+            this.category = ConfigManager.BindConfig(
+                sectionName,
+                "Category",
+                defaultVals.category,
+                "A string defining the tab the prefab shows up on in the hammer build table.",
+                HammerCategories.GetAcceptableValueList()
+            );
+       
+            this.craftingStation = ConfigManager.BindConfig(
+                sectionName,
+                "CraftingStation",
+                defaultVals.craftingStation,
+                "A string defining the crafting station required to built the prefab.",
+                CraftingStations.GetAcceptableValueList()
+            );
+        
+            this.requirements = ConfigManager.BindConfig(
+                sectionName,
+                "Requirements",
+                defaultVals.requirements,
+                "Resources required to build the prefab. Formatted as: itemID,amount;itemID,amount where itemID is the in-game identifier for the resource and amount is an integer. "
+            );
+     
+            // if the prefab is not already set to use the placement patch by default
+            // then add a config option to enable the placement collision patch.
+            if (!defaultVals.placementPatch)
+            {
+                this.placementPatch = ConfigManager.BindConfig(
+                    sectionName,
+                    "PlacementPatch",
+                    false,
+                    "Set to true to enable collision patching during placement of the piece. " +
+                    "Recommended to try this if the piece is not appearing when you go to place it.\n" +
+                    "(If this setting fixes the issue please let me know via Github or Discord so I can change the default settings.)"
+                );
+            }
+
+            if (!defaultVals.clipEverything)
+            {
+                this.clipEverything = ConfigManager.BindConfig(
+                    sectionName,
+                    "ClipEverything",
+                    false,
+                    "Set to true to allow piece to clip through everything during placement. Recommended to try this if the piece is not appearing when you go to place it.\n" +
+                    "(If this setting fixes the issue please let me know via Github or Discord so I can change the default settings.)"
+                )
+            }
+
+            if (!defaultVals.clipGround)
+            {
+                this.clipGround = ConfigManager.BindConfig(
+                    sectionName,
+                    "ClipGround",
+                    false,
+                    "Set to true to allow piece to clip through ground during placement.Recommended to try this if the piece is not floating when you try to place it.\n" +
+                    "(If this setting fixes the issue please let me know via Github or Discord so I can change the default settings.)"
+                );
+            }
+        }
+
+        /// <summary>
         ///     Casts config data into the PrefabDB class format.
         /// </summary>
         /// <returns></returns>
