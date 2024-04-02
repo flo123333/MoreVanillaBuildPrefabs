@@ -5,10 +5,28 @@ namespace MVBP.Extensions
 {
     internal static class GameObjectExtensions
     {
-        //internal static string GetPrefabName(this GameObject gameObject)
-        //{
-        //    return Utils.GetPrefabName(gameObject);
-        //}
+        /// <summary>
+        ///     Gets the root Prefab name by recursively stripping the suffix "(Clone)".
+        /// </summary>
+        /// <param name="gameObject"></param>
+        /// <returns></returns>
+        internal static string GetPrefabName(this GameObject gameObject)
+        {
+            string prefabName = gameObject.name;
+            int length = gameObject.name.Length;
+
+            while (true)
+            {
+                prefabName = prefabName.RemoveSuffix("(Clone)");
+                if (length == prefabName.Length)
+                {
+                    break;
+                }
+                length = prefabName.Length;
+            }
+
+            return prefabName;
+        }
 
         /// <summary>
         ///     Creates a deep copy of the object.
