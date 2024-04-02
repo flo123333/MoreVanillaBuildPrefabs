@@ -72,7 +72,7 @@ namespace MVBP.Helpers
         /// </summary>
         /// <param name="pieceDB"></param>
         /// <returns></returns>
-        internal static string FormatPrefabName(PieceDB pieceDB)
+        internal static string FormatPieceName(PieceDB pieceDB)
         {
             // TODO: custom renaming format for BossStone prefabs
             if (NameCache.ContainsKey(pieceDB.name))
@@ -158,7 +158,7 @@ namespace MVBP.Helpers
             return name;
         }
 
-        internal static string GetPrefabDescription(PieceDB pieceDB)
+        internal static string GetPieceDescription(PieceDB pieceDB)
         {
             if (DescCache.ContainsKey(pieceDB.name))
             {
@@ -171,12 +171,12 @@ namespace MVBP.Helpers
                 return pieceDB.pieceDesc;
             }
 
-            pieceDB.pieceDesc = FindPrefabDescription(pieceDB.Prefab);
+            pieceDB.pieceDesc = FindPieceDescription(pieceDB.Prefab);
             DescCache[pieceDB.name] = pieceDB.pieceDesc;
             return pieceDB.pieceDesc;
         }
 
-        private static string FindPrefabDescription(GameObject prefab)
+        private static string FindPieceDescription(GameObject prefab)
         {
             HoverText hover = prefab.GetComponent<HoverText>();
             if (hover && !string.IsNullOrEmpty(hover.m_text))
@@ -221,27 +221,17 @@ namespace MVBP.Helpers
             }
 
             Pickable pickable = prefab.GetComponent<Pickable>();
-            if (pickable) return FindPrefabDescription(pickable.m_itemPrefab);
+            if (pickable) return FindPieceDescription(pickable.m_itemPrefab);
 
             CreatureSpawner creatureSpawner = prefab.GetComponent<CreatureSpawner>();
-            if (creatureSpawner) return FindPrefabDescription(creatureSpawner.m_creaturePrefab);
+            if (creatureSpawner) return FindPieceDescription(creatureSpawner.m_creaturePrefab);
 
             SpawnArea spawnArea = prefab.GetComponent<SpawnArea>();
             if (spawnArea && spawnArea.m_prefabs.Count > 0)
             {
-                return FindPrefabDescription(spawnArea.m_prefabs[0].m_prefab);
+                return FindPieceDescription(spawnArea.m_prefabs[0].m_prefab);
             }
             return "";
-        }
-
-        /// <summary>
-        ///     Get name of parent prefab by stripping suffix "(Clone)" if nessecary
-        /// </summary>
-        /// <param name="piece"></param>
-        /// <returns></returns>
-        internal static string GetRootPrefabName(Piece piece)
-        {
-            return piece.gameObject.name.RemoveSuffix("(Clone)");
         }
     }
 }
