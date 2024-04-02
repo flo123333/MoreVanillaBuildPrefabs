@@ -90,18 +90,6 @@ namespace MVBP
 
         #region Prefab Settings
 
-        internal class PrefabDBConfig
-        {
-            internal ConfigEntry<bool> enabled;
-            internal ConfigEntry<bool> allowedInDungeons;
-            internal ConfigEntry<string> category;
-            internal ConfigEntry<string> craftingStation;
-            internal ConfigEntry<string> requirements;
-            internal ConfigEntry<bool> placementPatch;
-            internal ConfigEntry<bool> clipEverything;
-            internal ConfigEntry<bool> clipGround;
-        }
-
         private static readonly Dictionary<string, PrefabDBConfig> PrefabDBConfigsMap = new();
 
         internal static bool IsPrefabConfigEnabled(string prefabName) => PrefabDBConfigsMap[prefabName].enabled.Value;
