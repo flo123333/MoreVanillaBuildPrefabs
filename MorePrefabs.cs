@@ -331,39 +331,33 @@ namespace MVBP
         }
 
         /// <summary>
-        ///     Gets a PrefanDB instance based on the configuration settings.
+        ///     Gets a PrefabDB instance based on the configuration settings.
         /// </summary>
         /// <param name="prefab"></param>
         /// <returns></returns>
         internal static PrefabDB GetPrefabDB(GameObject prefab)
         {
-            string sectionName = prefab.name;
-
-            // get predefined configs or generic settings if no predefined config
-            PrefabDB defaultPrefabDB = PrefabConfigs.GetDefaultPrefabDB(prefab.name);
-            PrefabDBConfig prefabDBConfig;
-
-            if (PrefabDBConfigsMap.ContainsKey(sectionName)) // already loaded
-            {
-                // configure PrefabDB based on existing ConfigEntries
-                prefabDBConfig = PrefabDBConfigsMap[sectionName];
-                defaultPrefabDB.enabled = prefabDBConfig.enabled.Value;
-                defaultPrefabDB.allowedInDungeons = prefabDBConfig.allowedInDungeons.Value;
-                defaultPrefabDB.category = prefabDBConfig.category.Value;
-                defaultPrefabDB.craftingStation = prefabDBConfig.craftingStation.Value;
-                defaultPrefabDB.requirements = prefabDBConfig.requirements.Value;
-                if (prefabDBConfig.clipEverything != null)
-                {
-                    defaultPrefabDB.clipEverything = prefabDBConfig.clipEverything.Value;
-                }
-                if (prefabDBConfig.clipGround != null)
-                {
-                    defaultPrefabDB.clipGround = prefabDBConfig.clipGround.Value;
-                }
-                return defaultPrefabDB;
+            // Config has already been bound, simply get it as a PrefabDB
+            if (PrefabDBConfigsMap.ContainsKey(prefab.name))
+            {    
+                return PrefabDBConfigsMap[prefab.name].AsPrefabDB();
             }
+            
+            // Bind new configs and return as PrefabDB
+            PrefabDBConfig prefabDBConfig = BindNewPrefabDBConfig(prefab);
+            return prefabDBConfig.AsPrefabDB();
+        }
 
-            prefabDBConfig = new();
+        private static PrefabDBConfig BindNewPrefabDBConfig(GameObject prefab)
+        {
+            // Get the default configs values to use when creating the config for the first time
+            // This will be overriden by the config file values if they exist
+            string sectionName = prefab.name;
+            PrefabDB defaultPrefabDB = PrefabConfigs.GetDefaultPrefabDB(sectionName);
+
+
+            // Create new PrefabDBConfig based on config file 
+            var prefabDBConfig = new PrefabDBConfig();
 
             prefabDBConfig.enabled = ConfigManager.BindConfig(
                 sectionName,
@@ -376,8 +370,7 @@ namespace MVBP
                 order: 10
             );
             prefabDBConfig.enabled.SettingChanged += PieceSettingChanged;
-            defaultPrefabDB.enabled = prefabDBConfig.enabled.Value;
-
+  
             prefabDBConfig.allowedInDungeons = ConfigManager.BindConfig(
                 sectionName,
                 "AllowedInDungeons",
@@ -385,8 +378,7 @@ namespace MVBP
                 "If true then this prefab can be built inside dungeon zones."
             );
             prefabDBConfig.allowedInDungeons.SettingChanged += PieceSettingChanged;
-            defaultPrefabDB.allowedInDungeons = prefabDBConfig.allowedInDungeons.Value;
-
+  
             prefabDBConfig.category = ConfigManager.BindConfig(
                 sectionName,
                 "Category",
@@ -395,8 +387,7 @@ namespace MVBP
                 HammerCategories.GetAcceptableValueList()
             );
             prefabDBConfig.category.SettingChanged += PieceSettingChanged;
-            defaultPrefabDB.category = prefabDBConfig.category.Value;
-
+  
             prefabDBConfig.craftingStation = ConfigManager.BindConfig(
                 sectionName,
                 "CraftingStation",
@@ -405,8 +396,7 @@ namespace MVBP
                 CraftingStations.GetAcceptableValueList()
             );
             prefabDBConfig.craftingStation.SettingChanged += PieceSettingChanged;
-            defaultPrefabDB.craftingStation = prefabDBConfig.craftingStation.Value;
-
+      
             prefabDBConfig.requirements = ConfigManager.BindConfig(
                 sectionName,
                 "Requirements",
@@ -414,8 +404,7 @@ namespace MVBP
                 "Resources required to build the prefab. Formatted as: itemID,amount;itemID,amount where itemID is the in-game identifier for the resource and amount is an integer. "
             );
             prefabDBConfig.requirements.SettingChanged += PieceSettingChanged;
-            defaultPrefabDB.requirements = prefabDBConfig.requirements.Value;
-
+   
             // if the prefab is not already set to use the placement patch by default
             // then add a config option to enable the placement collision patch.
             if (!defaultPrefabDB.placementPatch)
@@ -429,7 +418,6 @@ namespace MVBP
                     "(If this setting fixes the issue please let me know via Github or Discord so I can change the default settings.)"
                 );
                 prefabDBConfig.placementPatch.SettingChanged += PlacementSettingChanged;
-                defaultPrefabDB.placementPatch = prefabDBConfig.placementPatch.Value;
             }
 
             if (!defaultPrefabDB.clipEverything)
@@ -442,7 +430,6 @@ namespace MVBP
                     "(If this setting fixes the issue please let me know via Github or Discord so I can change the default settings.)"
                 );
                 prefabDBConfig.clipEverything.SettingChanged += PieceSettingChanged;
-                defaultPrefabDB.clipEverything = prefabDBConfig.clipEverything.Value;
             }
 
             if (!defaultPrefabDB.clipGround)
@@ -455,12 +442,12 @@ namespace MVBP
                     "(If this setting fixes the issue please let me know via Github or Discord so I can change the default settings.)"
                 );
                 prefabDBConfig.clipGround.SettingChanged += PieceSettingChanged;
-                defaultPrefabDB.clipGround = prefabDBConfig.clipGround.Value;
             }
 
             // keep a reference to the config entries for later use and making sure events are fired correctly
             PrefabDBConfigsMap[prefab.name] = prefabDBConfig;
-            return defaultPrefabDB;
+
+            return prefabDBConfig;
         }
     }
 
