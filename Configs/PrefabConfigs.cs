@@ -21,11 +21,11 @@ namespace MVBP.Configs {
             "dvergrprops_wood_stair",
         };
 
-        internal static PrefabDB GetDefaultPrefabDB(string prefab_name) {
-            if (DefaultConfigValues.ContainsKey(prefab_name)) {
-                return DefaultConfigValues[prefab_name];
+        internal static PrefabDB GetDefaultPrefabDB(string prefabName) {
+            if (DefaultConfigValues.ContainsKey(prefabName)) {
+                return DefaultConfigValues[prefabName];
             }
-            return new PrefabDB(prefab_name);
+            return new PrefabDB(prefabName);
         }
 
         internal static readonly Dictionary<string, PrefabDB> DefaultConfigValues = new()
