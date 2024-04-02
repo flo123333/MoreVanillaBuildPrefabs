@@ -114,7 +114,8 @@ namespace MVBP {
                 selectedPrefab.GetComponent<AnimalAI>() ||
                 selectedPrefab.GetComponent<Tameable>() ||
                 selectedPrefab.GetComponent<Ragdoll>() ||
-                selectedPrefab.GetComponent<Humanoid>()) {
+                selectedPrefab.GetComponent<Humanoid>()) 
+            {
                 setActive = selectedPrefab.activeSelf;
                 selectedPrefab.SetActive(false);
             }
@@ -122,7 +123,8 @@ namespace MVBP {
             GameObject clonedPrefab = UnityEngine.Object.Instantiate(selectedPrefab);
 
             if (PieceHelper.AddedPrefabs.Contains(selectedPrefab.name) &&
-                MorePrefabs.NeedsCollisionPatchForGhost(selectedPrefab.name)) {
+                MorePrefabs.NeedsCollisionPatchForGhost(selectedPrefab.name)) 
+            {
                 // Needed to make some things work, like Stalagmite, blackmarble_corner_stair, silvervein, etc.
                 CollisionHelper.PatchCollider(clonedPrefab);
             }
@@ -165,15 +167,18 @@ namespace MVBP {
         [HarmonyPostfix]
         [HarmonyPatch(nameof(Player.UpdatePlacementGhost))]
         private static void UpdatePlacementGhostPostfix(Player __instance) {
-            if (__instance.m_placementGhost == null) {
-                if (__instance.m_placementMarkerInstance) {
+            if (__instance.m_placementGhost == null) 
+            {
+                if (__instance.m_placementMarkerInstance) 
+                {
                     __instance.m_placementMarkerInstance.SetActive(value: false);
                 }
                 return;
             }
 
             if (InitManager.TryGetPieceDB(__instance.m_placementGhost, out PieceDB pieceDB) &&
-                pieceDB.placementOffset != null) {
+                pieceDB.placementOffset != null) 
+            {
                 var quaternion = __instance.m_placementGhost.transform.rotation;
                 var pos = __instance.m_placementGhost.transform.position;
                 __instance.m_placementGhost.transform.position = pos + (quaternion * pieceDB.placementOffset.Value);
@@ -182,13 +187,17 @@ namespace MVBP {
 
         [HarmonyPrefix]
         [HarmonyPatch(nameof(Player.RemovePiece))]
-        internal static bool RemovePiecePrefix(Player __instance, ref bool __result) {
-            if (__instance.GetRightItem().m_shared.m_name == "$item_hammer") {
+        internal static bool RemovePiecePrefix(Player __instance, ref bool __result) 
+        {
+            if (__instance.GetRightItem().m_shared.m_name == "$item_hammer") 
+            {
                 var cameraTrans = GameCamera.instance.transform;
                 if (Physics.Raycast(cameraTrans.position, cameraTrans.forward, out var hitInfo, 50f, PieceRemovalMask) &&
-                    Vector3.Distance(hitInfo.point, __instance.m_eye.position) < __instance.m_maxPlaceDistance) {
+                    Vector3.Distance(hitInfo.point, __instance.m_eye.position) < __instance.m_maxPlaceDistance) 
+                {
                     Piece piece = hitInfo.collider.GetComponentInParent<Piece>();
-                    if (piece && InitManager.IsPatchedByMod(piece)) {
+                    if (piece && InitManager.IsPatchedByMod(piece)) 
+                    {
                         __result = RemoveCustomPiece(__instance, piece);
                         return false; // skip vanilla method
                     }
@@ -197,40 +206,51 @@ namespace MVBP {
             return true; // run vanilla method
         }
 
-        private static bool RemoveCustomPiece(Player player, Piece piece) {
-            if (piece) {
-                if (!Check_m_canBeRemoved(piece)) {
+        private static bool RemoveCustomPiece(Player player, Piece piece) 
+        {
+            if (piece) 
+            {
+                if (!Check_m_canBeRemoved(piece)) 
+                {
                     return false;
                 }
-                if (Location.IsInsideNoBuildLocation(piece.transform.position)) {
+                if (Location.IsInsideNoBuildLocation(piece.transform.position)) 
+                {
                     player.Message(MessageHud.MessageType.Center, "$msg_nobuildzone");
                     return false;
                 }
-                if (!PrivateArea.CheckAccess(piece.transform.position)) {
+                if (!PrivateArea.CheckAccess(piece.transform.position)) 
+                {
                     player.Message(MessageHud.MessageType.Center, "$msg_privatezone");
                     return false;
                 }
-                if (!player.CheckCanRemovePiece(piece)) {
+                if (!player.CheckCanRemovePiece(piece)) 
+                {
                     return false;
                 }
                 ZNetView component = piece.GetComponent<ZNetView>();
-                if (component == null) {
+                if (component == null) 
+                {
                     return false;
                 }
-                if (!piece.CanBeRemoved()) {
+                if (!piece.CanBeRemoved()) 
+                {
                     player.Message(MessageHud.MessageType.Center, "$msg_cantremovenow");
                     return false;
                 }
                 WearNTear component2 = piece.GetComponent<WearNTear>();
-                if (component2) {
+                if (component2) 
+                {
                     component2.Remove();
                 }
-                else {
+                else 
+                {
                     Log.LogInfo("Removing non WNT object with hammer " + piece.name);
                     component.ClaimOwnership();
                     if (!RemoveDestructiblePiece(piece)
                         && !RemoveMineRock5Piece(piece)
-                        && !RemoveMineRockPiece(piece)) {
+                        && !RemoveMineRockPiece(piece)) 
+                    {
                         piece.DropResources();
                         piece.m_placeEffect.Create(piece.transform.position, piece.transform.rotation, piece.gameObject.transform);
                         player.m_removeEffects.Create(piece.transform.position, Quaternion.identity);
@@ -238,7 +258,8 @@ namespace MVBP {
                     }
                 }
                 ItemDrop.ItemData rightItem = player.GetRightItem();
-                if (rightItem != null) {
+                if (rightItem != null) 
+                {
                     player.FaceLookDirection();
                     player.m_zanim.SetTrigger(rightItem.m_shared.m_attack.m_attackAnimation);
                 }
