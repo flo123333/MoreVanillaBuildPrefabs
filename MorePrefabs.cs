@@ -150,8 +150,7 @@ namespace MVBP
         {
             if (PrefabDBConfigsMap.TryGetValue(prefabName, out PrefabDBConfig prefabDBConfig))
             {
-                // If null then settings is hidden from users and should always be true.
-                return prefabDBConfig.placementPatch == null || prefabDBConfig.placementPatch.Value;
+                return prefabDBConfig.ApplyPlacementPatch;
             }
 
             return false;

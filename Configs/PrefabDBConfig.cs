@@ -15,6 +15,10 @@ namespace MVBP.Configs
         internal ConfigEntry<bool> clipGround;
 
         /// <summary>
+        ///     Bool indicating if placement patch should be applied.
+        ///     If internal value is null then setting is hidden from users and should always be applied.
+        /// </summary>
+        internal bool ApplyPlacementPatch => placementPatch == null || placementPatch.Value;
         ///     Casts config data into the PrefabDB class format.
         /// </summary>
         /// <returns></returns>
