@@ -131,8 +131,8 @@ namespace MVBP.Helpers
         {
             var piece = pieceDB.piece;
 
-            var name = NameMaker.FormatPrefabName(pieceDB);
-            var description = NameMaker.GetPrefabDescription(pieceDB);
+            var name = NameMaker.FormatPieceName(pieceDB);
+            var description = NameMaker.GetPieceDescription(pieceDB);
             var pieceCategory = (Piece.PieceCategory)PieceManager.Instance.GetPieceCategory(pieceDB.category);
 
             if (AddedPieceComponent.Contains(pieceDB.name))
