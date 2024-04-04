@@ -122,8 +122,11 @@ namespace MVBP {
 
             GameObject clonedPrefab = UnityEngine.Object.Instantiate(selectedPrefab);
 
-            if (PieceHelper.AddedPrefabs.Contains(selectedPrefab.name) &&
-                MorePrefabs.NeedsCollisionPatchForGhost(selectedPrefab.name)) 
+            // Handle selection of non-standard prefabs (like in InfinityHammer)
+            string prefabName = selectedPrefab.GetPrefabName();
+
+            if (PieceHelper.AddedPrefabs.Contains(prefabName) &&
+                MorePrefabs.NeedsCollisionPatchForGhost(prefabName)) 
             {
                 // Needed to make some things work, like Stalagmite, blackmarble_corner_stair, silvervein, etc.
                 CollisionHelper.PatchCollider(clonedPrefab);
