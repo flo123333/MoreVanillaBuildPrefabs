@@ -123,7 +123,9 @@ namespace MVBP {
             GameObject clonedPrefab = UnityEngine.Object.Instantiate(selectedPrefab);
 
             // Handle selection of non-standard prefabs (like in InfinityHammer)
-            string prefabName = selectedPrefab.GetPrefabName();
+            //string prefabName = selectedPrefab.GetPrefabName();
+
+            string prefabName = selectedPrefab.name;
 
             if (PieceHelper.AddedPrefabs.Contains(prefabName) &&
                 MorePrefabs.NeedsCollisionPatchForGhost(prefabName)) 
