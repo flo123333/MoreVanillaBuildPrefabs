@@ -153,16 +153,16 @@ namespace MVBP.Helpers
         /// <returns></returns>
         internal static string GetPrefabName(GameObject gameObject)
         {
-            if (!gameObject) 
-            { 
-                return string.Empty; 
+            if (!gameObject)
+            {
+                return string.Empty;
             }
 
             var prefabName = gameObject.GetPrefabName();
-     
-            if (PrefabRefs.ContainsKey(prefabName)) 
-            { 
-                return prefabName; 
+
+            if (PrefabRefs.ContainsKey(prefabName))
+            {
+                return prefabName;
             }
 
             if (gameObject.TryGetComponent(out Piece piece) && PieceToPrefabMap.ContainsKey(piece.m_name))
@@ -290,7 +290,7 @@ namespace MVBP.Helpers
         }
 
         /// <summary>
-        ///     Initializes references to pieces and their configuration settings then applies 
+        ///     Initializes references to pieces and their configuration settings then applies
         ///     the configuration settings from the PieceDB for each piece in PieceRefs.
         /// </summary>
         private static void InitPieces()
