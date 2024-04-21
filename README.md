@@ -175,17 +175,6 @@ The mod has a default configuration that enables ~100 new pieces by default. The
 			</td>
 		</tr>
     <tr>
-			<td align="center"><b>DoorPatches (Requires Restart)</b></td>
-      <td align="center">Yes</td>
-			<td align="left">
-        Set to true/enabled to patch player-built instances of new doors (that do not require keys) to allow closing them even if that is normally prevented.
-				<ul>
-					<li>Acceptable values: False, True</li>
-					<li>Default value: true</li>
-				</ul>
-			</td>
-		</tr>
-    <tr>
 			<td align="center"><b>PlayerBasePatches (Requires Restart)</b></td>
       <td align="center">Yes</td>
 			<td align="left">
@@ -466,8 +455,6 @@ When you deconstruct a piece that has an ItemStand component it will always drop
 MoreVanillaBuildPrefabs is able to detect prefabs added by other mods. It is possible to enable and configure those prefabs much like the Vanilla prefabs added by MVBP. In some cases, prefabs from other mods can cause issues, though it is uncommon. As a general rule, I will not patch prefabs from other mods as I do not have access to the assets from other mods. Please still let me know if a prefab from another mod causes issues so I can prevent MoreVanillaBuildPrefabs from enabling it though. Additionally, if the other mod author is willing to collaborate regarding the issue I am open to that.
 
 ## Known Issues
-**Config Changes on Dedicated Server**: Configuration changes made on a dedicated server using an in-game configuration manager do persist after logging out and re-connecting  but they are not saved to disk on the server until the server is shut down. A pull request to fix this has been merged into Jotunn already, so once Jotunn updates this issue will be resolved.
-
 **Placement Glitch**: There is one pickable that falls through the terrain when placed, making it appear to not have been placed. After a short period of time it will be pushed to the surface and appear so give it a moment.
 
 **Impossible Recipes**: Forcing pickable pieces to always require resources equal to or greater than what they drop when picked means that if a pickable is unattainable in the Vanilla game, then the recipe for it can never be unlocked. I am currently considering how I want to address this and whether this should be considered a bug or not as it is a consequence of the intended behavior to prevent infinite resource exploits. It is still possible to unlock these recipes via console commands or using other mods like [ExpandWorld](https://valheim.thunderstore.io/package/JereKuusela/Expand_World_Data/) or [Immersively Obtainable Blue Mushrooms](https://valheim.thunderstore.io/package/Goldenrevolver/Immersively_Obtainable_Blue_Mushrooms/) to populate those pickables in the world.
@@ -488,9 +475,6 @@ These are non-exhaustive lists.
 ### Incompatible Mods
 **PotteryBarn (by ComfyMods)** Currently both mods apply a transpiler patch to `Player.SetUpPlacementGhost()` and using MoreVanillaBuildPrefabs while PotteryBarn is installed will cause MoreVanillaBuildPrefabs to fail to load correctly. I am looking into a possible fix for this but it is not high priory as I think it is unlikely someone would use both mods at the same time given their functions directly overlap (I could be wrong though).
 
-### Partial Incompatibly
-**PlanBuild (by MathiasDecrock)** The two mods do work together but not all of the icons for custom pieces added by MoreVanillaBuildPieces show on correctly in the build table for PlanBuild's Plan Hammer. MoreVanillaBuildPrefabs can now cause PlanBuild to detect pieces as they are enabled but PlanBuild does not update for when MVBP removes prefabs. A fix is currently being worked on in collaboration with the authors of PlanBuild though.
-
 ### Compatible Mods
 All of my mods are fully compatible with eachother.
 
@@ -499,6 +483,10 @@ All of my mods are fully compatible with eachother.
 **Gizmo (by ComfyMods)**: Fully compatible and highly recommended if you like building.
 
 **WackysDatabase (by Wackymole)**: These two mods are fully compatible. You can use WackyDB to alter pieces added by this mod. Depending on what you alter the dynamic configuration changes of this mod may override the change changes made by WackyDB when the mod updates in response to the config changes. To resolve this you can A.) avoid changing the config for this mod while in-game, B.) log out and rejoin to allow WackyDB to reapply it's changes, C.) use the wackydb_reload console command to reapply changes without exiting the game (probably the easiest and best option).
+
+**PlanBuild (by MathiasDecrock)** The two mods are fully compatible as of PlanBuild v0.15.0.
+
+**InfinityHammer, InfinityTools, ExpandWorldData, & ExpandWorldPrefabs (by Jere)** All of these mods are fully compatible with MoreVanillaBuildPrefabs and are often used together by world builders.
 
 <details>
 

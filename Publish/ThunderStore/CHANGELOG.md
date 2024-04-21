@@ -8,6 +8,16 @@
 			<th align="center">Notes</th>
 		</tr>
 		<tr>
+			<td align="center">1.1.0</td>
+			<td align="left">
+				<ul>
+					<li>Player-built doors that do not require keys can now always be opened/closed even if they cannot normally be opened/closed. This change also persists even after this mod is uninstalled.</li>
+					<li>Improved compatibility with PlantEverything so that MVBP ignores vanilla pickable objects that PlantEverything modifies even if they are not buildable in PlantEverything.</li>
+					<li>Added a few new pieces to this version thanks to some help from Jere to figure out how to persistently edit prefab data even after uninstalling the mod.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
 			<td align="center">1.0.8</td>
 			<td align="left">
 				<ul>
