@@ -861,7 +861,6 @@ namespace MVBP.Helpers
                         TextureHelper.GetBlackMarblePortalBumpMap()
                     );
                 }
-
             }
 
             if (MorePrefabs.IsEnableComfortPatches)
@@ -1040,6 +1039,7 @@ namespace MVBP.Helpers
             }
         }
 
+        // TODO: can I add game objects via ZDO or just components?
         private static void AddPlayerBase(GameObject gameObject)
         {
             // create PlayerBase object as child
@@ -1065,7 +1065,8 @@ namespace MVBP.Helpers
         private static void ApplyDoorPatches(string name, GameObject gameObject)
         {
             // Missing animations
-            // "dungeon_queen_door"
+            // dungeon_queen_door
+            // dvergrtown_secretdoor
 
             switch (name)
             {
@@ -1077,8 +1078,8 @@ namespace MVBP.Helpers
                             return;
                         }
 
-                            door.m_canNotBeClosed = false;
-                            door.m_checkGuardStone = true;
+                        door.m_canNotBeClosed = false;
+                        door.m_checkGuardStone = true;
 
                         if (gameObject.TryGetComponent(out ZNetView nview))
                         {
@@ -1123,6 +1124,8 @@ namespace MVBP.Helpers
 
             var bed = gameObject.AddComponent<Bed>();
             bed.m_spawnPoint = attachPoint.transform;
+
+            // TODO: can I add game objects via ZDO or just components?
         }
 
         /// <summary>
