@@ -926,14 +926,15 @@ namespace MVBP.Helpers
             }
             var prefabName = InitManager.GetPrefabName(piece);
 
+            ApplyDoorPatches(prefabName, piece.gameObject);
+            //if (MorePrefabs.IsEnableDoorPatches)
+            //{
+            //    ApplyDoorPatches(prefabName, piece.gameObject);
+            //}
+
             if (piece.TryGetComponent(out Destructible destructible))
             {
                 EditDestructibleSpawn(prefabName, destructible);
-            }
-
-            if (MorePrefabs.IsEnableDoorPatches)
-            {
-                ApplyDoorPatches(prefabName, piece.gameObject);
             }
             if (MorePrefabs.IsEnablePlayerBasePatches)
             {

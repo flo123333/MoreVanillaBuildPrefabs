@@ -26,7 +26,7 @@ namespace MVBP
         public const string PluginName = "MoreVanillaBuildPrefabs";
         internal const string Author = "Searica";
         public const string PluginGUID = $"{Author}.Valheim.{PluginName}";
-        public const string PluginVersion = "1.0.8";
+        public const string PluginVersion = "1.1.0";
 
         #region Global Settings
 
@@ -53,14 +53,18 @@ namespace MVBP
 
         private const string CustomizationSection = "3 - Customization";
         private static ConfigEntry<bool> EnableHammerCrops { get; set; }
-        private static ConfigEntry<bool> EnableDoorPatches { get; set; }
+
+        //private static ConfigEntry<bool> EnableDoorPatches { get; set; }
         private static ConfigEntry<bool> EnableComfortPatches { get; set; }
+
         private static ConfigEntry<bool> EnableSeasonalPieces { get; set; }
         private static ConfigEntry<bool> EnablePlayerBasePatches { get; set; }
         private static ConfigEntry<bool> EnablePortalPatch { get; set; }
         internal static bool IsEnableHammerCrops => EnableHammerCrops.Value;
-        internal static bool IsEnableDoorPatches => EnableDoorPatches.Value;
+
+        //internal static bool IsEnableDoorPatches => EnableDoorPatches.Value;
         internal static bool IsEnableComfortPatches => EnableComfortPatches.Value;
+
         internal static bool IsEnableSeasonalPieces => EnableSeasonalPieces.Value;
         internal static bool IsEnablePlayerBasePatches => EnablePlayerBasePatches.Value;
         internal static bool IsEnablePortalPatch => EnablePortalPatch.Value;
@@ -92,13 +96,14 @@ namespace MVBP
 
         private static readonly Dictionary<string, PrefabDBConfig> PrefabDBConfigsMap = new();
 
-        internal static bool IsPrefabConfigEnabled(string prefabName) {
+        internal static bool IsPrefabConfigEnabled(string prefabName)
+        {
             if (PrefabDBConfigsMap.ContainsKey(prefabName) && PrefabDBConfigsMap[prefabName].enabled != null)
             {
                 return PrefabDBConfigsMap[prefabName].enabled.Value;
             }
             return false;
-        } 
+        }
 
         #endregion Prefab Settings
 
@@ -254,13 +259,13 @@ namespace MVBP
                 "Set to true/enabled to patch new pieces to have comfort values like their vanilla counterparts."
             );
 
-            EnableDoorPatches = ConfigManager.BindConfig(
-                CustomizationSection,
-                "DoorPatches (Requires Restart)",
-                true,
-                "Set to true/enabled to patch player-built instances of new doors " +
-                "(that do not require keys) to allow closing them even if that is normally prevented."
-            );
+            //EnableDoorPatches = ConfigManager.BindConfig(
+            //    CustomizationSection,
+            //    "DoorPatches (Requires Restart)",
+            //    true,
+            //    "Set to true/enabled to patch player-built instances of new doors " +
+            //    "(that do not require keys) to allow closing them even if that is normally prevented."
+            //);
 
             EnablePlayerBasePatches = ConfigManager.BindConfig(
                 CustomizationSection,
@@ -345,10 +350,10 @@ namespace MVBP
         {
             // Config has already been bound, simply get it as a PrefabDB
             if (PrefabDBConfigsMap.ContainsKey(prefab.name))
-            {    
+            {
                 return PrefabDBConfigsMap[prefab.name].AsPrefabDB();
             }
-            
+
             // Bind new configs and return as PrefabDB
             PrefabDBConfig prefabDBConfig = BindNewPrefabDBConfig(prefab);
             return prefabDBConfig.AsPrefabDB();
@@ -358,10 +363,10 @@ namespace MVBP
         {
             // Get the default configs values to use when creating the config for the first time
             // This will be overridden by the config file values if they exist
-        
+
             PrefabDB defaultPrefabDB = PrefabConfigs.GetDefaultPrefabDB(prefab.name);
 
-            // Create new PrefabDBConfig based on values from PrefabDB or Config File 
+            // Create new PrefabDBConfig based on values from PrefabDB or Config File
             var prefabDBConfig = new PrefabDBConfig(defaultPrefabDB);
 
             // Set up the events to trigger updates and respond to config changes
@@ -370,7 +375,7 @@ namespace MVBP
             prefabDBConfig.category.SettingChanged += PieceSettingChanged;
             prefabDBConfig.craftingStation.SettingChanged += PieceSettingChanged;
             prefabDBConfig.requirements.SettingChanged += PieceSettingChanged;
-    
+
             // Some config settings are left as null and hidden from the user
             // because they should always be set to true.
             // Check for null values to avoid NRE.
@@ -385,7 +390,7 @@ namespace MVBP
             }
 
             if (prefabDBConfig.clipGround != null)
-            { 
+            {
                 prefabDBConfig.clipGround.SettingChanged += PieceSettingChanged;
             }
 
