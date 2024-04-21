@@ -4,8 +4,10 @@ using Jotunn.Configs;
 using MVBP.Helpers;
 using UnityEngine;
 
-namespace MVBP.Configs {
-    internal class PrefabDB {
+namespace MVBP.Configs
+{
+    internal class PrefabDB
+    {
         public string name;
         public bool enabled;
         public bool allowedInDungeons;
@@ -20,13 +22,16 @@ namespace MVBP.Configs {
         public string pieceDesc;
         public PieceGroup pieceGroup;
         public bool playerBasePatch;
+        public string? spawnOnDestroyed;
 
-        internal GameObject Prefab {
+        internal GameObject Prefab
+        {
             get { return InitManager.PrefabRefs[name]; }
         }
 
         // for inheritance
-        public PrefabDB() { }
+        public PrefabDB()
+        { }
 
         public PrefabDB(
             string name,
@@ -42,9 +47,10 @@ namespace MVBP.Configs {
             string pieceName = null,
             string pieceDesc = null,
             PieceGroup pieceGroup = default,
-            bool playerBasePatch = false
-
-        ) {
+            bool playerBasePatch = false,
+            string? spawnOnDestroyed = null
+        )
+        {
             this.name = name;
             this.enabled = enabled;
             this.allowedInDungeons = allowedInDungeons;
@@ -59,6 +65,7 @@ namespace MVBP.Configs {
             this.pieceDesc = pieceDesc;
             this.pieceGroup = pieceGroup;
             this.playerBasePatch = playerBasePatch;
+            this.spawnOnDestroyed = spawnOnDestroyed;
         }
 
         /// <summary>
@@ -77,7 +84,7 @@ namespace MVBP.Configs {
             // This is to avoid users changing it because it should always be set to true
             this.placementPatch = DBConfig.placementPatch == null || DBConfig.placementPatch.Value;
             this.clipEverything = DBConfig.clipEverything == null || DBConfig.clipEverything.Value;
-            this.clipGround = DBConfig.clipGround == null || DBConfig.clipGround.Value;        
+            this.clipGround = DBConfig.clipGround == null || DBConfig.clipGround.Value;
         }
     }
 }
