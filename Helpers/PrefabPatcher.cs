@@ -921,7 +921,7 @@ namespace MVBP.Helpers
         /// <param name="piece"></param>
         internal static void PatchPlayerBuiltPieceIfNeed(Piece piece)
         {
-            if (piece?.gameObject == null || !piece.IsPlacedByPlayer() || !InitManager.IsPatchedByMod(piece))
+            if (!piece || !piece.gameObject || !piece.IsPlacedByPlayer() || !InitManager.IsPatchedByMod(piece))
             {
                 return;
             }
