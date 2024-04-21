@@ -15,8 +15,16 @@ namespace MVBP.Helpers {
         /// <param name="prefab"></param>
         /// <param name="result"></param>
         /// <returns></returns>
-        internal static bool GetEligiblePrefab(GameObject prefab, out GameObject result) {
-            if (ShouldIgnorePrefab(prefab)) {
+        internal static bool GetEligiblePrefab(GameObject prefab, out GameObject result)
+        {
+            if (ShouldIgnorePrefab(prefab))
+            {
+                result = null;
+                return false;
+            }
+
+            if (ModCompat.IsPlantEverythingInstalled() && IgnorePlantEverything.Contains(prefab.name))
+            {
                 result = null;
                 return false;
             }
