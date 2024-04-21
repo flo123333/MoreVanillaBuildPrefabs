@@ -1072,10 +1072,22 @@ namespace MVBP.Helpers
                 case "dvergrtown_slidingdoor":
                 case "dvergrtown_secretdoor":
                     {
-                        if (gameObject.TryGetComponent(out Door door))
+                        if (!gameObject.TryGetComponent(out Door door))
                         {
+                            return;
+                        }
+
                             door.m_canNotBeClosed = false;
                             door.m_checkGuardStone = true;
+
+                        if (gameObject.TryGetComponent(out ZNetView nview))
+                        {
+                            var zdo = nview.GetZDO();
+                            if (zdo == null) { return; }
+                            zdo.Set("HasFields", true);
+                            zdo.Set("HasFieldsDoor", true);
+                            zdo.Set("Door.m_canNotBeClosed", false);
+                            zdo.Set("Door.m_checkGuardStone", true);
                         }
                     }
                     break;
