@@ -6,9 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
-namespace MVBP {
+namespace MVBP
+{
     [HarmonyPatch(typeof(Piece))]
-    internal static class PiecePatch {
+    internal static class PiecePatch
+    {
         /// <summary>
         ///     Applies patches from PatchPlayerBuildPieceIfNeeded
         ///     when pieces are loaded in.
@@ -17,7 +19,8 @@ namespace MVBP {
         [HarmonyPostfix]
         [HarmonyPriority(Priority.VeryHigh)]
         [HarmonyPatch(nameof(Piece.Awake))]
-        private static void PieceAwakePostfix(Piece __instance) {
+        private static void PieceAwakePostfix(Piece __instance)
+        {
             PrefabPatcher.PatchPlayerBuiltPieceIfNeed(__instance);
         }
 
@@ -29,7 +32,8 @@ namespace MVBP {
         [HarmonyPostfix]
         [HarmonyPriority(Priority.VeryHigh)]
         [HarmonyPatch(nameof(Piece.SetCreator))]
-        private static void PieceSetCreatorPostfix(Piece __instance) {
+        private static void PieceSetCreatorPostfix(Piece __instance)
+        {
             PrefabPatcher.PatchPlayerBuiltPieceIfNeed(__instance);
         }
 
@@ -41,13 +45,16 @@ namespace MVBP {
         /// <param name="__instance"></param>
         [HarmonyPrefix]
         [HarmonyPatch(nameof(Piece.SetCreator))]
-        private static void PieceSetCreatorPrefix(Piece __instance) {
+        private static void PieceSetCreatorPrefix(Piece __instance)
+        {
             var view = __instance.GetComponent<ZNetView>();
-            if (view && !view.m_persistent) {
+            if (view && !view.m_persistent)
+            {
                 view.m_persistent = true;
 
                 var sync = __instance.gameObject.GetComponent<ZSyncTransform>();
-                if (!sync) {
+                if (!sync)
+                {
                     sync = __instance.gameObject.AddComponent<ZSyncTransform>();
                 }
                 sync.m_syncPosition = true;
@@ -65,7 +72,8 @@ namespace MVBP {
         [HarmonyPatch(nameof(Piece.DropResources))]
         private static IEnumerable<CodeInstruction> DropResourcesTranspiler(
             IEnumerable<CodeInstruction> instructions
-        ) {
+        )
+        {
             /* Target this IL code to be able to edit the resources that get dropped
              * // Requirement[] resources = m_resources;
              * IL_0011: ldarg.0
@@ -96,12 +104,15 @@ namespace MVBP {
         ///     forces ItemStand to drop attached item (if it has one).
         /// </summary>
         /// <param name="piece"></param>
-        private static Piece.Requirement[] DropResources_m_resources_Delegate(Piece piece) {
-            if (!piece) {
+        private static Piece.Requirement[] DropResources_m_resources_Delegate(Piece piece)
+        {
+            if (!piece)
+            {
                 return Array.Empty<Piece.Requirement>();
             }
 
-            if (!InitManager.IsPatchedByMod(piece)) {
+            if (!InitManager.IsPatchedByMod(piece))
+            {
                 // do nothing if not a piece the mod changes
                 return piece.m_resources;
             }
@@ -111,7 +122,8 @@ namespace MVBP {
             Log.LogInfo("Dropping resources for MVBP piece", LogLevel.Medium);
 
             // Set resources to defaults is piece is not placed by player (world-generated pieces)
-            if (!piece.IsPlacedByPlayer() && InitManager.TryGetDefaultPieceResources(piece.gameObject, out Piece.Requirement[] defaultResources) && defaultResources != null) {
+            if (!piece.IsPlacedByPlayer() && InitManager.TryGetDefaultPieceResources(piece.gameObject, out Piece.Requirement[] defaultResources) && defaultResources != null)
+            {
                 return defaultResources;
             }
 
@@ -119,27 +131,32 @@ namespace MVBP {
             var resources = piece.m_resources;
 
             // Early return if GameObject is missing
-            if (!piece.gameObject) {
+            if (!piece.gameObject)
+            {
                 return resources;
             }
 
             // If piece has MineRock5 then adjust dropped resources
-            if (piece.gameObject.TryGetComponent(out MineRock5 mineRock5)) {
+            if (piece.gameObject.TryGetComponent(out MineRock5 mineRock5))
+            {
                 resources = RequirementsHelper.RemoveMineRock5DropsFromRequirements(resources, mineRock5);
             }
 
             // If piece has MineRock then adjust dropped resources
-            if (piece.gameObject.TryGetComponent(out MineRock mineRock)) {
+            if (piece.gameObject.TryGetComponent(out MineRock mineRock))
+            {
                 resources = RequirementsHelper.RemoveMineRockDropsFromRequirements(resources, mineRock);
             }
 
             // Early return if ZNetView is missing
-            if (!piece.gameObject.TryGetComponent(out ZNetView zNetView)) {
+            if (!piece.gameObject.TryGetComponent(out ZNetView zNetView))
+            {
                 return resources;
             }
 
             // If piece has an ItemStand and it has an item, then drop it.
-            if (piece.gameObject.TryGetComponent(out ItemStand itemStand)) {
+            if (piece.gameObject.TryGetComponent(out ItemStand itemStand))
+            {
                 var canBeRemoved = itemStand.m_canBeRemoved;
                 itemStand.m_canBeRemoved = true;
                 zNetView.InvokeRPC("DropItem");
@@ -147,7 +164,8 @@ namespace MVBP {
             }
 
             // If piece is pickable and it has not been picked, then pick it.
-            if (piece.gameObject.TryGetComponent(out Pickable pickable)) {
+            if (piece.gameObject.TryGetComponent(out Pickable pickable))
+            {
                 zNetView.InvokeRPC("Pick");
                 // Adjust drops to avoid duplicating pickable item (avoid infinite resource exploits).
                 resources = RequirementsHelper.RemovePickableFromRequirements(resources, pickable);
