@@ -5,8 +5,17 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MVBP.Helpers {
-    internal static class PrefabFilter {
+namespace MVBP.Helpers
+{
+    internal static class PrefabFilter
+    {
+        private static HashSet<string> IgnorePlantEverything = new()
+        {
+            "Pickable_Branch",
+            "Pickable_Flint",
+            "Pickable_Stone"
+        };
+
         /// <summary>
         ///     Checks if a prefab is eligible for adding. If the prefab
         ///     spawns a MineRock5 component when destroyed then result
