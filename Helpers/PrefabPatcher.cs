@@ -927,6 +927,11 @@ namespace MVBP.Helpers
             }
             var prefabName = InitManager.GetPrefabName(piece);
 
+            if (piece.TryGetComponent(out Destructible destructible))
+            {
+                EditDestructibleSpawn(prefabName, destructible);
+            }
+
             if (MorePrefabs.IsEnableDoorPatches)
             {
                 ApplyDoorPatches(prefabName, piece.gameObject);
@@ -951,6 +956,42 @@ namespace MVBP.Helpers
             //{
             //    AddLiquidCollider(piece.gameObject);
             //}
+        }
+
+        /// <summary>
+        ///     Edit the prefab and ZDO to change the value of m_spawnOnDestroyed in a
+        ///     persistent way based on the default config settings.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="destructible"></param>
+        private static void EditDestructibleSpawn(string name, Destructible destructible)
+        {
+            if (!destructible || !PrefabConfigs.DefaultConfigValues.TryGetValue(name, out var config))
+            {
+                return;
+            }
+
+            if (string.IsNullOrEmpty(config.spawnOnDestroyed))
+            {
+                return;
+            }
+
+            var spawn = ZNetScene.instance.GetPrefab(config.spawnOnDestroyed);
+            if (!spawn)
+            {
+                return;
+            }
+
+            var zdo = destructible.m_nview.GetZDO();
+            if (zdo == null)
+            {
+                return;
+            }
+            zdo.Set("HasFields", true);
+            zdo.Set("HasFieldsDestructible", true);
+            zdo.Set("Destructible.m_spawnWhenDestroyed", "fx_crystal_destruction");
+
+            destructible.m_spawnWhenDestroyed = spawn;
         }
 
         //private static void AddLiquidCollider(GameObject gameObject)
