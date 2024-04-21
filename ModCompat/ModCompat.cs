@@ -13,16 +13,22 @@ namespace MVBP
         public const string ExtraSnapsGUID = "Searica.Valheim.ExtraSnapPointsMadeEasy";
         public const string PlanBuildGUID = "marcopogo.PlanBuild";
         public const string WackysDBGUID = "WackyMole.WackysDatabase";
+        public const string PlantEverythingGUID = "advize.PlantEverything";
 
         private static bool? _ExtraSnapsInstalled;
         private static bool? _PlanBuildInstalled;
         private static bool? _WackysDBInstalled;
+        private static bool? _PlantEverythingInstalled;
 
         private static MethodInfo ReInitExtraSnapPoints;
 
-        private static Type PlanDBType;
-        private static object PlanDBInstance;
         private static MethodInfo PlanBuildScanTables;
+
+        internal static bool IsPlantEverythingInstalled()
+        {
+            _PlantEverythingInstalled ??= Chainloader.PluginInfos.ContainsKey(PlantEverythingGUID);
+            return _PlantEverythingInstalled.Value;
+        }
 
         internal static bool IsWackysDBInstalled()
         {
@@ -93,7 +99,7 @@ namespace MVBP
                 return false;
             }
 
-            // trigger rescanning of piece tables via reflection          
+            // trigger rescanning of piece tables via reflection
             Log.LogInfo("PlanBuild is installed", LogLevel.Medium);
             try
             {
