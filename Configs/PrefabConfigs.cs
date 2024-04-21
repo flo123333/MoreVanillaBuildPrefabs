@@ -4,8 +4,10 @@ using Jotunn.Configs;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MVBP.Configs {
-    internal static class PrefabConfigs {
+namespace MVBP.Configs
+{
+    internal static class PrefabConfigs
+    {
         private static readonly HashSet<string> DoNotCacheIcon = new()
         {
             "portal",
@@ -21,8 +23,10 @@ namespace MVBP.Configs {
             "dvergrprops_wood_stair",
         };
 
-        internal static PrefabDB GetDefaultPrefabDB(string prefabName) {
-            if (DefaultConfigValues.ContainsKey(prefabName)) {
+        internal static PrefabDB GetDefaultPrefabDB(string prefabName)
+        {
+            if (DefaultConfigValues.ContainsKey(prefabName))
+            {
                 return DefaultConfigValues[prefabName];
             }
             return new PrefabDB(prefabName);
@@ -2258,7 +2262,8 @@ namespace MVBP.Configs {
                     allowedInDungeons: false,
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
-                    requirements: "BlackMarble,100"
+                    requirements: "BlackMarble,100",
+                    spawnOnDestroyed: "sfx_rock_destroyed"
                 )
             },
             {
@@ -3568,7 +3573,8 @@ namespace MVBP.Configs {
                     allowedInDungeons: false,
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
-                    requirements: "Crystal,24"
+                    requirements: "Crystal,24",
+                    spawnOnDestroyed: "fx_crystal_destruction"
                 )
             },
             {
@@ -4643,6 +4649,21 @@ namespace MVBP.Configs {
                     clipEverything: true,
                     pieceName: "Rock (black)",
                     pieceGroup: PieceGroup.Rock
+                )
+            },
+            {
+                "rock_mistlands2",
+                new PrefabDB(
+                    name: "rock_mistlands2",
+                    enabled: true,
+                    allowedInDungeons: false,
+                    category: HammerCategories.Nature,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "Stone,48",
+                    clipEverything: true,
+                    pieceName: "Rock (black, alt)",
+                    pieceGroup: PieceGroup.Rock,
+                    spawnOnDestroyed: "sfx_rock_destroyed"
                 )
             },
             {
