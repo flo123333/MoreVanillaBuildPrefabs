@@ -14,7 +14,8 @@ namespace MVBP.Configs
         public const string Nature = "Nature";
         public const string Misc = "Misc";
         public const string Crafting = "Crafting";
-        public const string Building = "Building";
+        public const string Building = "BuildingWorkbench";
+        public const string Stonecutter = "BuildingStonecutter";
         public const string Furniture = "Furniture";
 
         internal static AcceptableValueList<string> GetAcceptableValueList()
