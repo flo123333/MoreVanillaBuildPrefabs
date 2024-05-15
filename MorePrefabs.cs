@@ -94,7 +94,7 @@ namespace MVBP
 
         #region Prefab Settings
 
-        private static readonly Dictionary<string, PrefabDBConfig> PrefabDBConfigsMap = new();
+        private static readonly Dictionary<string, PrefabDBConfigEntries> PrefabDBConfigsMap = new();
 
         internal static bool IsPrefabConfigEnabled(string prefabName)
         {
@@ -153,7 +153,7 @@ namespace MVBP
         /// <returns></returns>
         internal static bool NeedsCollisionPatchForGhost(string prefabName)
         {
-            if (PrefabDBConfigsMap.TryGetValue(prefabName, out PrefabDBConfig prefabDBConfig))
+            if (PrefabDBConfigsMap.TryGetValue(prefabName, out PrefabDBConfigEntries prefabDBConfig))
             {
                 return prefabDBConfig.ApplyPlacementPatch;
             }
@@ -355,11 +355,11 @@ namespace MVBP
             }
 
             // Bind new configs and return as PrefabDB
-            PrefabDBConfig prefabDBConfig = BindNewPrefabDBConfig(prefab);
+            PrefabDBConfigEntries prefabDBConfig = BindNewPrefabDBConfig(prefab);
             return prefabDBConfig.AsPrefabDB();
         }
 
-        private static PrefabDBConfig BindNewPrefabDBConfig(GameObject prefab)
+        private static PrefabDBConfigEntries BindNewPrefabDBConfig(GameObject prefab)
         {
             // Get the default configs values to use when creating the config for the first time
             // This will be overridden by the config file values if they exist
@@ -367,7 +367,7 @@ namespace MVBP
             PrefabDB defaultPrefabDB = PrefabConfigs.GetDefaultPrefabDB(prefab.name);
 
             // Create new PrefabDBConfig based on values from PrefabDB or Config File
-            var prefabDBConfig = new PrefabDBConfig(defaultPrefabDB);
+            var prefabDBConfig = new PrefabDBConfigEntries(defaultPrefabDB);
 
             // Set up the events to trigger updates and respond to config changes
             prefabDBConfig.enabled.SettingChanged += PieceSettingChanged;
