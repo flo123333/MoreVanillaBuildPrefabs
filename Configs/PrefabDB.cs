@@ -72,7 +72,7 @@ namespace MVBP.Configs
         ///     Update field data based on PrefabDBConfig data.
         /// </summary>
         /// <param name="DBConfig"></param>
-        public void Update(PrefabDBConfig DBConfig)
+        public void Update(PrefabDBConfigEntries DBConfig)
         {
             this.enabled = DBConfig.enabled.Value;
             this.allowedInDungeons = DBConfig.allowedInDungeons.Value;
