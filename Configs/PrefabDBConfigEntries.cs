@@ -119,7 +119,7 @@ namespace MVBP.Configs
             {
                 // Get default prefabDB if it exists or make a new blank prefabDB
                 string prefabName = this.enabled.Definition.Section;
-                PrefabDB prefabDB = PrefabConfigs.GetDefaultPrefabDB(prefabName);
+                PrefabDB prefabDB = PrefabDefaults.GetDefaultPrefabDB(prefabName);
                 prefabDB.Update(this);
                 return prefabDB;
             }
