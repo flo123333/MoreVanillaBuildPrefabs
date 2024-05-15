@@ -966,7 +966,7 @@ namespace MVBP.Helpers
         /// <param name="destructible"></param>
         private static void EditDestructibleSpawn(string name, Destructible destructible)
         {
-            if (!destructible || !PrefabConfigs.DefaultConfigValues.TryGetValue(name, out var config))
+            if (!destructible || !PrefabDefaults.DefaultConfigValues.TryGetValue(name, out var config))
             {
                 return;
             }
@@ -1017,7 +1017,7 @@ namespace MVBP.Helpers
         /// <param name="gameObject"></param>
         private static void ApplyNewDvergrTexture(string name, GameObject gameObject)
         {
-            if (PrefabConfigs.DvergrWoodPieces.Contains(name))
+            if (PrefabDefaults.DvergrWoodPieces.Contains(name))
             {
                 Renderer[] componentsInChildren = gameObject.transform.Find("New").GetComponentsInChildren<Renderer>(true);
                 foreach (Renderer renderer in componentsInChildren)

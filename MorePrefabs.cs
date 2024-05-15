@@ -364,7 +364,7 @@ namespace MVBP
             // Get the default configs values to use when creating the config for the first time
             // This will be overridden by the config file values if they exist
 
-            PrefabDB defaultPrefabDB = PrefabConfigs.GetDefaultPrefabDB(prefab.name);
+            PrefabDB defaultPrefabDB = PrefabDefaults.GetDefaultPrefabDB(prefab.name);
 
             // Create new PrefabDBConfig based on values from PrefabDB or Config File
             var prefabDBConfig = new PrefabDBConfigEntries(defaultPrefabDB);

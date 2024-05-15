@@ -42,7 +42,7 @@ namespace MVBP.Helpers
             if (prefab.TryGetComponent(out Destructible destructible))
             {
                 // Is it set up to have what it spawns be changed
-                if (PrefabConfigs.DefaultConfigValues.TryGetValue(prefab.name, out PrefabDB config) &&
+                if (PrefabDefaults.DefaultConfigValues.TryGetValue(prefab.name, out PrefabDB config) &&
                     !string.IsNullOrEmpty(config.spawnOnDestroyed))
                 {
                     result = prefab;

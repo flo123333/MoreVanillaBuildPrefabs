@@ -95,7 +95,7 @@ namespace MVBP.Helpers
             var request = new RenderManager.RenderRequest(obj)
             {
                 Rotation = RenderManager.IsometricRotation,
-                UseCache = PrefabConfigs.ShouldCacheIcon(obj.name)
+                UseCache = PrefabDefaults.ShouldCacheIcon(obj.name)
             };
 
             return RenderManager.Instance.Render(request);
