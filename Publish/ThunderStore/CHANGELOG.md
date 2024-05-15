@@ -8,10 +8,18 @@
 			<th align="center">Notes</th>
 		</tr>
 		<tr>
+			<td align="center">1.2.1</td>
+			<td align="left">
+				<ul>
+					<li>Updated default piece categories to use new Ashlands categories. You will probably need to regenerate your config file due to the category names changing in Vanilla.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
 			<td align="center">1.2.0</td>
 			<td align="left">
 				<ul>
-					<li>Patched to work on Ashlands.</li>
+					<li>Patched to work on Ashlands and prevent crashing the weather system.</li>
 				</ul>
 			</td>
 		</tr>
