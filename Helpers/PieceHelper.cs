@@ -129,6 +129,8 @@ namespace MVBP.Helpers
         /// <returns></returns>
         internal static Piece ConfigurePiece(PieceDB pieceDB)
         {
+            Log.LogInfo(pieceDB.name);
+            Log.LogInfo($"Null Piece: {pieceDB.piece == null}");
             var piece = pieceDB.piece;
 
             var name = NameMaker.FormatPieceName(pieceDB);
