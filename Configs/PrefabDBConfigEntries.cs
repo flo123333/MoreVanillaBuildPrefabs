@@ -4,7 +4,7 @@ using System;
 
 namespace MVBP.Configs
 {
-    internal class PrefabDBConfig
+    internal class PrefabDBConfigEntries
     {
         internal ConfigEntry<bool> enabled;
         internal ConfigEntry<bool> allowedInDungeons;
@@ -27,7 +27,7 @@ namespace MVBP.Configs
         ///     the existing Config File when binding config entries.
         /// </summary>
         /// <param name="defaultVals"></param>
-        public PrefabDBConfig(PrefabDB defaultVals)
+        public PrefabDBConfigEntries(PrefabDB defaultVals)
         {
             string sectionName = defaultVals.name;
             
