@@ -129,13 +129,10 @@ namespace MVBP.Helpers
         /// <returns></returns>
         internal static Piece ConfigurePiece(PieceDB pieceDB)
         {
-            Log.LogInfo(pieceDB.name);
-            Log.LogInfo($"Null Piece: {pieceDB.piece == null}");
             var piece = pieceDB.piece;
-
             var name = NameMaker.FormatPieceName(pieceDB);
             var description = NameMaker.GetPieceDescription(pieceDB);
-            var pieceCategory = (Piece.PieceCategory)PieceManager.Instance.GetPieceCategory(pieceDB.category);
+            var pieceCategory = GetPieceCategory(pieceDB.category);
 
             if (AddedPieceComponent.Contains(pieceDB.name))
             {
@@ -167,6 +164,26 @@ namespace MVBP.Helpers
 
 
             return piece;
+        }
+
+
+        /// <summary>
+        ///     Safely search for piece category and fall back to "Misc" if
+        ///     it cannot be found.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        private static Piece.PieceCategory GetPieceCategory(string name)
+        {
+            try
+            {
+                return (Piece.PieceCategory)PieceManager.Instance.GetPieceCategory(name);
+            }
+            catch (InvalidOperationException e)
+            {
+                Log.LogWarning($"Could not find value for Piece Category: {name}");
+                return Piece.PieceCategory.Misc;
+            }
         }
 
         /// <summary>
