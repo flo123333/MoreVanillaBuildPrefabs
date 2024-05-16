@@ -22,6 +22,7 @@ namespace MVBP.Configs
 
         Wood,
         Darkwood,
+        Ashwood,
         Goblin,
         Iron,
         Crystal,
