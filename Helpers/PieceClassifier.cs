@@ -219,6 +219,7 @@ namespace MVBP.Helpers
                 if (prefabName.Contains("darkwood")) return PieceGroup.Darkwood;
                 if (prefabName.ContainsAny("wood", "turf")) return PieceGroup.Wood;
                 if (prefabName.Contains("stone")) return PieceGroup.Stone;
+                // if (prefabName.Contains("ashlands")) return PieceGroup.Ashwood;
             }
 
             if (
