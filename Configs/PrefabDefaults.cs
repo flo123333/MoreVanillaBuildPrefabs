@@ -5481,7 +5481,7 @@ namespace MVBP.Configs
                     name: "dvergrprops_hooknchain",
                     enabled: true,
                     allowedInDungeons: false,
-                    category: HammerCategories.Misc,
+                    category: HammerCategories.Stonecutter,
                     craftingStation: nameof(CraftingStations.BlackForge),
                     requirements: "Chain,2;Iron,2",
                     clipEverything: false,
