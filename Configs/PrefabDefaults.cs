@@ -45,6 +45,7 @@ namespace MVBP.Configs
                     requirements: "FineWood,8;BronzeNails,2;Tar,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceDesc: "",
                     pieceGroup: PieceGroup.ArmorStand
                 )
@@ -60,8 +61,1353 @@ namespace MVBP.Configs
                     requirements: "FineWood,8;BronzeNails,2;Tar,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceDesc: "",
                     pieceGroup: PieceGroup.ArmorStand
+                )
+            },
+            {
+                "Ashland_Stair",
+                new PrefabDB(
+                    name: "Ashland_Stair",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashland_Steepstair",
+                new PrefabDB(
+                    name: "Ashland_Steepstair",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsBranch1",
+                new PrefabDB(
+                    name: "AshlandsBranch1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsBranch2",
+                new PrefabDB(
+                    name: "AshlandsBranch2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsBranch3",
+                new PrefabDB(
+                    name: "AshlandsBranch3",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsBush1",
+                new PrefabDB(
+                    name: "AshlandsBush1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsBush2",
+                new PrefabDB(
+                    name: "AshlandsBush2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTree1",
+                new PrefabDB(
+                    name: "AshlandsTree1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTree3",
+                new PrefabDB(
+                    name: "AshlandsTree3",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTree4",
+                new PrefabDB(
+                    name: "AshlandsTree4",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTree5",
+                new PrefabDB(
+                    name: "AshlandsTree5",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTree6",
+                new PrefabDB(
+                    name: "AshlandsTree6",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTree6_big",
+                new PrefabDB(
+                    name: "AshlandsTree6_big",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTreeLog1",
+                new PrefabDB(
+                    name: "AshlandsTreeLog1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTreeLog2",
+                new PrefabDB(
+                    name: "AshlandsTreeLog2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTreeLogHalf1",
+                new PrefabDB(
+                    name: "AshlandsTreeLogHalf1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTreeLogHalf2",
+                new PrefabDB(
+                    name: "AshlandsTreeLogHalf2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTreeStump1",
+                new PrefabDB(
+                    name: "AshlandsTreeStump1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTreeStump2",
+                new PrefabDB(
+                    name: "AshlandsTreeStump2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "AshlandsTreeStump3",
+                new PrefabDB(
+                    name: "AshlandsTreeStump3",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Altar",
+                new PrefabDB(
+                    name: "Ashlands_Altar",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Arch1",
+                new PrefabDB(
+                    name: "Ashlands_Arch1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Arch2",
+                new PrefabDB(
+                    name: "Ashlands_Arch2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Arch2_Broken1",
+                new PrefabDB(
+                    name: "Ashlands_Arch2_Broken1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Arch2_Broken2",
+                new PrefabDB(
+                    name: "Ashlands_Arch2_Broken2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_ArchRoof",
+                new PrefabDB(
+                    name: "Ashlands_ArchRoof",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_ArchRoofDamaged",
+                new PrefabDB(
+                    name: "Ashlands_ArchRoofDamaged",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_ArchRoofDamaged_half1",
+                new PrefabDB(
+                    name: "Ashlands_ArchRoofDamaged_half1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_ArchRoofDamaged_half2",
+                new PrefabDB(
+                    name: "Ashlands_ArchRoofDamaged_half2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_ArchRoofLong_Damaged",
+                new PrefabDB(
+                    name: "Ashlands_ArchRoofLong_Damaged",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Boss_Pillar",
+                new PrefabDB(
+                    name: "Ashlands_Boss_Pillar",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Boss_Pillar_Twist_broken1",
+                new PrefabDB(
+                    name: "Ashlands_Boss_Pillar_Twist_broken1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Boss_Pillar_Twist_broken2",
+                new PrefabDB(
+                    name: "Ashlands_Boss_Pillar_Twist_broken2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Boss_Pillar_Twist_broken3",
+                new PrefabDB(
+                    name: "Ashlands_Boss_Pillar_Twist_broken3",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Floor",
+                new PrefabDB(
+                    name: "Ashlands_Floor",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Fortress_Floor",
+                new PrefabDB(
+                    name: "Ashlands_Fortress_Floor",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Fortress_Gate",
+                new PrefabDB(
+                    name: "Ashlands_Fortress_Gate",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Fortress_Gate_Door",
+                new PrefabDB(
+                    name: "Ashlands_Fortress_Gate_Door",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Fortress_Wall_PillarTopStone_frac",
+                new PrefabDB(
+                    name: "Ashlands_Fortress_Wall_PillarTopStone_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Fortress_Wall_PillarTop_frac",
+                new PrefabDB(
+                    name: "Ashlands_Fortress_Wall_PillarTop_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Fortress_Wall_Pillar_frac",
+                new PrefabDB(
+                    name: "Ashlands_Fortress_Wall_Pillar_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Fortress_Wall_Spikes",
+                new PrefabDB(
+                    name: "Ashlands_Fortress_Wall_Spikes",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Pillar4",
+                new PrefabDB(
+                    name: "Ashlands_Pillar4",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Pillar4_tip",
+                new PrefabDB(
+                    name: "Ashlands_Pillar4_tip",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Pillar4_tip2",
+                new PrefabDB(
+                    name: "Ashlands_Pillar4_tip2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Pillar4_tip2_broken1",
+                new PrefabDB(
+                    name: "Ashlands_Pillar4_tip2_broken1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Pillar4_tip2_broken2",
+                new PrefabDB(
+                    name: "Ashlands_Pillar4_tip2_broken2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Pillar4_tip3",
+                new PrefabDB(
+                    name: "Ashlands_Pillar4_tip3",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Pillar4_tip3_broken1",
+                new PrefabDB(
+                    name: "Ashlands_Pillar4_tip3_broken1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Pillar4_tip3_broken2",
+                new PrefabDB(
+                    name: "Ashlands_Pillar4_tip3_broken2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Pillar4_tip3_broken3",
+                new PrefabDB(
+                    name: "Ashlands_Pillar4_tip3_broken3",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Pillar4_tip_broken1",
+                new PrefabDB(
+                    name: "Ashlands_Pillar4_tip_broken1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Pillar4_tip_broken2",
+                new PrefabDB(
+                    name: "Ashlands_Pillar4_tip_broken2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_PillarBase3_double",
+                new PrefabDB(
+                    name: "Ashlands_PillarBase3_double",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ramp",
+                new PrefabDB(
+                    name: "Ashlands_Ramp",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Floor_1point5x1point5",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Floor_1point5x1point5",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Floor_1point5x1point5_broken",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Floor_1point5x1point5_broken",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Floor_3x3",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Floor_3x3",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Floor_3x3_broken1",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Floor_3x3_broken1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Floor_3x3_broken2",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Floor_3x3_broken2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Floor_3x3_broken3",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Floor_3x3_broken3",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Floor_6x6",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Floor_6x6",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Floor_6x6_broken1",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Floor_6x6_broken1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Floor_6x6_broken2",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Floor_6x6_broken2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Ramp",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Ramp",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Ramp_Upsidedown",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Ramp_Upsidedown",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_TopStone",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_TopStone",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Wall_4x6",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Wall_4x6",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Wall_Broken3_4x6",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Wall_Broken3_4x6",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Wall_Broken4_4x6",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Wall_Broken4_4x6",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Wall_Broken5_4x6",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Wall_Broken5_4x6",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Wall_Top_wHole",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Wall_Top_wHole",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Wall_Window_4x6_broken2",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Wall_Window_4x6_broken2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Wall_Window_4x6_broken3",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Wall_Window_4x6_broken3",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Wall_Window_4x6_broken4",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Wall_Window_4x6_broken4",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Wall_Window_4x6_broken5",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Wall_Window_4x6_broken5",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Wall_Window_4x6_broken6",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Wall_Window_4x6_broken6",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_Wall_Windows_Broken_4x6",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_Wall_Windows_Broken_4x6",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_twist_ArchBig",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_twist_ArchBig",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_twist_PillarBase",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_twist_PillarBase",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Ruins_twist_PillarBaseSmall",
+                new PrefabDB(
+                    name: "Ashlands_Ruins_twist_PillarBaseSmall",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_StairsBroad",
+                new PrefabDB(
+                    name: "Ashlands_StairsBroad",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_WallBlock",
+                new PrefabDB(
+                    name: "Ashlands_WallBlock",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_WallBlock_1x2x2",
+                new PrefabDB(
+                    name: "Ashlands_WallBlock_1x2x2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_WallBlock_base",
+                new PrefabDB(
+                    name: "Ashlands_WallBlock_base",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Wall_2x2",
+                new PrefabDB(
+                    name: "Ashlands_Wall_2x2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Wall_2x2_cornerL",
+                new PrefabDB(
+                    name: "Ashlands_Wall_2x2_cornerL",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Wall_2x2_cornerL_top",
+                new PrefabDB(
+                    name: "Ashlands_Wall_2x2_cornerL_top",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Wall_2x2_cornerR",
+                new PrefabDB(
+                    name: "Ashlands_Wall_2x2_cornerR",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Wall_2x2_cornerR_top",
+                new PrefabDB(
+                    name: "Ashlands_Wall_2x2_cornerR_top",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Wall_2x2_edge",
+                new PrefabDB(
+                    name: "Ashlands_Wall_2x2_edge",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Wall_2x2_edge2",
+                new PrefabDB(
+                    name: "Ashlands_Wall_2x2_edge2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Wall_2x2_edge2_top",
+                new PrefabDB(
+                    name: "Ashlands_Wall_2x2_edge2_top",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Wall_2x2_edge_top",
+                new PrefabDB(
+                    name: "Ashlands_Wall_2x2_edge_top",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_Wall_2x2_top",
+                new PrefabDB(
+                    name: "Ashlands_Wall_2x2_top",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Ashlands_floor_large_fractured",
+                new PrefabDB(
+                    name: "Ashlands_floor_large_fractured",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -75,6 +1421,7 @@ namespace MVBP.Configs
                     requirements: "Wood,16",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -89,6 +1436,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -103,6 +1451,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -117,6 +1466,7 @@ namespace MVBP.Configs
                     requirements: "Wood,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -131,6 +1481,7 @@ namespace MVBP.Configs
                     requirements: "BirchSeeds,1;FineWood,2",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -145,6 +1496,7 @@ namespace MVBP.Configs
                     requirements: "BirchSeeds,1;FineWood,2",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Birch1 (autumn)",
                     pieceGroup: PieceGroup.Flora
                 )
@@ -160,6 +1512,7 @@ namespace MVBP.Configs
                     requirements: "BirchSeeds,1;FineWood,2",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -174,6 +1527,7 @@ namespace MVBP.Configs
                     requirements: "BirchSeeds,1;FineWood,2",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Birch (autumn)",
                     pieceGroup: PieceGroup.Flora
                 )
@@ -189,6 +1543,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -203,6 +1558,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -217,6 +1573,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -231,6 +1588,7 @@ namespace MVBP.Configs
                     requirements: "Blueberries,5",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Plant
                 )
             },
@@ -245,6 +1603,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -259,6 +1618,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -273,7 +1633,22 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Misc
+                )
+            },
+            {
+                "BossStone_Fader",
+                new PrefabDB(
+                    name: "BossStone_Fader",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -287,6 +1662,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -301,6 +1677,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -315,6 +1692,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -329,6 +1707,7 @@ namespace MVBP.Configs
                     requirements: "Wood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -343,6 +1722,7 @@ namespace MVBP.Configs
                     requirements: "Wood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -357,6 +1737,7 @@ namespace MVBP.Configs
                     requirements: "Wood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -371,6 +1752,7 @@ namespace MVBP.Configs
                     requirements: "Wood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Wood box",
                     pieceGroup: PieceGroup.Misc
                 )
@@ -386,6 +1768,7 @@ namespace MVBP.Configs
                     requirements: "Iron,2;Resin,2;SurtlingCore,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Standing iron torch (everburning)",
                     pieceDesc: "Burns eternally without fuel.",
                     pieceGroup: PieceGroup.Torch,
@@ -403,6 +1786,7 @@ namespace MVBP.Configs
                     requirements: "Iron,2;GreydwarfEye,2;SurtlingCore,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Standing blue-burning iron torch (everburning)",
                     pieceDesc: "Burns eternally without fuel.",
                     pieceGroup: PieceGroup.Torch,
@@ -420,10 +1804,81 @@ namespace MVBP.Configs
                     requirements: "Iron,2;Guck,2;SurtlingCore,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Standing green-burning iron torch (everburning)",
                     pieceDesc: "Burns eternally without fuel.",
                     pieceGroup: PieceGroup.Torch,
                     playerBasePatch: true
+                )
+            },
+            {
+                "CharredBanner1",
+                new PrefabDB(
+                    name: "CharredBanner1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "CharredBanner2",
+                new PrefabDB(
+                    name: "CharredBanner2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "CharredBanner3",
+                new PrefabDB(
+                    name: "CharredBanner3",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Charred_altar_bellfragment",
+                new PrefabDB(
+                    name: "Charred_altar_bellfragment",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Charredfortress_LOD",
+                new PrefabDB(
+                    name: "Charredfortress_LOD",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -437,6 +1892,7 @@ namespace MVBP.Configs
                     requirements: "Wood,10;Iron,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Chest
                 )
             },
@@ -451,6 +1907,7 @@ namespace MVBP.Configs
                     requirements: "Cloudberry,5",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Plant
                 )
             },
@@ -464,7 +1921,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "YggdrasilWood,2",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -477,7 +1935,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "YggdrasilWood,2",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -490,7 +1949,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "YggdrasilWood,2",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -503,7 +1963,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "YggdrasilWood,2",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -516,7 +1977,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "YggdrasilWood,2",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -529,7 +1991,36 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "YggdrasilWood,2",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "FernAshlands",
+                new PrefabDB(
+                    name: "FernAshlands",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "FernFiddleHeadAshlands",
+                new PrefabDB(
+                    name: "FernFiddleHeadAshlands",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -543,6 +2034,7 @@ namespace MVBP.Configs
                     requirements: "Wood,16",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -557,6 +2049,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -571,6 +2064,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -585,6 +2079,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -599,6 +2094,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -613,6 +2109,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -627,7 +2124,22 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
+                )
+            },
+            {
+                "FlametalRockstand_frac",
+                new PrefabDB(
+                    name: "FlametalRockstand_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -641,7 +2153,92 @@ namespace MVBP.Configs
                     requirements: "Ooze,1",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
+                )
+            },
+            {
+                "GraveStone_Broken_CharredTwitcherNest",
+                new PrefabDB(
+                    name: "GraveStone_Broken_CharredTwitcherNest",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "GraveStone_Broken_World",
+                new PrefabDB(
+                    name: "GraveStone_Broken_World",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "GraveStone_CharredFaderLocation",
+                new PrefabDB(
+                    name: "GraveStone_CharredFaderLocation",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "GraveStone_CharredTwitcherNest",
+                new PrefabDB(
+                    name: "GraveStone_CharredTwitcherNest",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "GraveStone_Elite_Broken_CharredTwitcherNest",
+                new PrefabDB(
+                    name: "GraveStone_Elite_Broken_CharredTwitcherNest",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "GraveStone_Elite_CharredTwitcherNest",
+                new PrefabDB(
+                    name: "GraveStone_Elite_CharredTwitcherNest",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -654,7 +2251,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Wood,2",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -667,7 +2265,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Guck,12",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -680,7 +2279,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Guck,6",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -694,6 +2294,7 @@ namespace MVBP.Configs
                     requirements: "ElderBark,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -707,7 +2308,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Crystal,16",
                     clipEverything: false,
-                    clipGround: true
+                    clipGround: true,
+                    placementPatch: false
                 )
             },
             {
@@ -720,7 +2322,22 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Chitin,50",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "LeviathanLava",
+                new PrefabDB(
+                    name: "LeviathanLava",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -733,7 +2350,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Wisp,1",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -747,6 +2365,7 @@ namespace MVBP.Configs
                     requirements: "Stone,10;CopperOre,10",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -761,6 +2380,7 @@ namespace MVBP.Configs
                     requirements: "Stone,10;IronScrap,10",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -775,6 +2395,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -789,6 +2410,7 @@ namespace MVBP.Configs
                     requirements: "Obsidian,7",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -803,6 +2425,7 @@ namespace MVBP.Configs
                     requirements: "Stone,10",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -817,6 +2440,7 @@ namespace MVBP.Configs
                     requirements: "TinOre,4",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -830,7 +2454,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Stone,5",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -844,6 +2469,7 @@ namespace MVBP.Configs
                     requirements: "Bronze,5;Coal,2;BlackCore,1;WolfClaw,3",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Standing brazier (everburning)",
                     pieceDesc: "Burns eternally without fuel.",
                     pieceGroup: PieceGroup.Brazier,
@@ -861,10 +2487,25 @@ namespace MVBP.Configs
                     requirements: "Bronze,5;GreydwarfEye,2;BlackCore,1;WolfClaw,3",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Blue standing brazier (everburning)",
                     pieceDesc: "Burns eternally without fuel.",
                     pieceGroup: PieceGroup.Brazier,
                     playerBasePatch: true
+                )
+            },
+            {
+                "MountainKit_brazier_purple",
+                new PrefabDB(
+                    name: "MountainKit_brazier_purple",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -877,7 +2518,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.Forge),
                     requirements: "Wood,20;Iron,4",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -891,6 +2533,7 @@ namespace MVBP.Configs
                     requirements: "Wood,20;FineWood,20",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -905,6 +2548,7 @@ namespace MVBP.Configs
                     requirements: "Wood,5;FineWood,5",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -919,6 +2563,7 @@ namespace MVBP.Configs
                     requirements: "Wood,10;FineWood,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -933,7 +2578,22 @@ namespace MVBP.Configs
                     requirements: "Wood,5;FineWood,5",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
+                )
+            },
+            {
+                "Pickable_Ashstone",
+                new PrefabDB(
+                    name: "Pickable_Ashstone",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -947,6 +2607,7 @@ namespace MVBP.Configs
                     requirements: "Barley,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.VanillaCrop
                 )
             },
@@ -961,6 +2622,7 @@ namespace MVBP.Configs
                     requirements: "Iron,2;BlackCore,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
                 )
             },
@@ -975,6 +2637,7 @@ namespace MVBP.Configs
                     requirements: "IronScrap,1",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -989,6 +2652,7 @@ namespace MVBP.Configs
                     requirements: "Wood,5",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -1003,7 +2667,22 @@ namespace MVBP.Configs
                     requirements: "Carrot,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.VanillaCrop
+                )
+            },
+            {
+                "Pickable_Charredskull",
+                new PrefabDB(
+                    name: "Pickable_Charredskull",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1017,6 +2696,7 @@ namespace MVBP.Configs
                     requirements: "Dandelion,5",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Plant
                 )
             },
@@ -1042,7 +2722,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "DragonEgg,1",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1055,7 +2736,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1069,6 +2751,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
                 )
             },
@@ -1083,7 +2766,22 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
+                )
+            },
+            {
+                "Pickable_Fiddlehead",
+                new PrefabDB(
+                    name: "Pickable_Fiddlehead",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1097,6 +2795,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
                 )
             },
@@ -1111,6 +2810,7 @@ namespace MVBP.Configs
                     requirements: "Flax,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.VanillaCrop
                 )
             },
@@ -1125,6 +2825,7 @@ namespace MVBP.Configs
                     requirements: "Flint,5",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -1139,6 +2840,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
                 )
             },
@@ -1153,6 +2855,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
                 )
             },
@@ -1167,6 +2870,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
                 )
             },
@@ -1181,6 +2885,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
                 )
             },
@@ -1195,6 +2900,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
                 )
             },
@@ -1209,6 +2915,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
                 )
             },
@@ -1236,6 +2943,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
                 )
             },
@@ -1250,7 +2958,22 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
+                )
+            },
+            {
+                "Pickable_MoltenCoreStand",
+                new PrefabDB(
+                    name: "Pickable_MoltenCoreStand",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1264,6 +2987,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -1278,6 +3002,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -1292,6 +3017,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
                 )
             },
@@ -1306,6 +3032,7 @@ namespace MVBP.Configs
                     requirements: "Mushroom,5",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Plant
                 )
             },
@@ -1320,6 +3047,7 @@ namespace MVBP.Configs
                     requirements: "MushroomJotunPuffs,1",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.VanillaCrop
                 )
             },
@@ -1334,6 +3062,7 @@ namespace MVBP.Configs
                     requirements: "MushroomMagecap,1",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.VanillaCrop
                 )
             },
@@ -1348,6 +3077,7 @@ namespace MVBP.Configs
                     requirements: "MushroomBlue,5",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Plant
                 )
             },
@@ -1362,6 +3092,7 @@ namespace MVBP.Configs
                     requirements: "MushroomYellow,5",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Plant
                 )
             },
@@ -1376,6 +3107,7 @@ namespace MVBP.Configs
                     requirements: "Obsidian,1",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -1390,7 +3122,22 @@ namespace MVBP.Configs
                     requirements: "Obsidian,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.VanillaCrop
+                )
+            },
+            {
+                "Pickable_Pot_Shard",
+                new PrefabDB(
+                    name: "Pickable_Pot_Shard",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1403,7 +3150,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1417,6 +3165,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.VanillaCrop
                 )
             },
@@ -1431,6 +3180,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.VanillaCrop
                 )
             },
@@ -1445,7 +3195,22 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.VanillaCrop
+                )
+            },
+            {
+                "Pickable_SmokePuff",
+                new PrefabDB(
+                    name: "Pickable_SmokePuff",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1459,7 +3224,22 @@ namespace MVBP.Configs
                     requirements: "Stone,5",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
+                )
+            },
+            {
+                "Pickable_SulfurRock",
+                new PrefabDB(
+                    name: "Pickable_SulfurRock",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1473,7 +3253,50 @@ namespace MVBP.Configs
                     requirements: "Iron,2;SurtlingCore,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Treasure
+                )
+            },
+            {
+                "Pickable_Swordpiece1",
+                new PrefabDB(
+                    name: "Pickable_Swordpiece1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Pickable_Swordpiece2",
+                new PrefabDB(
+                    name: "Pickable_Swordpiece2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Pickable_Swordpiece3",
+                new PrefabDB(
+                    name: "Pickable_Swordpiece3",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1487,6 +3310,7 @@ namespace MVBP.Configs
                     requirements: "Tar,1",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -1501,6 +3325,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -1515,6 +3340,7 @@ namespace MVBP.Configs
                     requirements: "Thistle,5",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Plant
                 )
             },
@@ -1529,6 +3355,7 @@ namespace MVBP.Configs
                     requirements: "TinOre,1",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -1543,7 +3370,22 @@ namespace MVBP.Configs
                     requirements: "Turnip,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.VanillaCrop
+                )
+            },
+            {
+                "Pickable_VoltureEgg",
+                new PrefabDB(
+                    name: "Pickable_VoltureEgg",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1557,6 +3399,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -1571,6 +3414,7 @@ namespace MVBP.Configs
                     requirements: "Wood,10;RoundLog,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -1585,6 +3429,7 @@ namespace MVBP.Configs
                     requirements: "Wood,5;RoundLog,5",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -1599,6 +3444,7 @@ namespace MVBP.Configs
                     requirements: "Wood,10;RoundLog,10",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -1613,6 +3459,7 @@ namespace MVBP.Configs
                     requirements: "Wood,5;RoundLog,5",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -1627,6 +3474,7 @@ namespace MVBP.Configs
                     requirements: "Raspberry,5",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Plant
                 )
             },
@@ -1641,6 +3489,7 @@ namespace MVBP.Configs
                     requirements: "Stone,75",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -1655,6 +3504,7 @@ namespace MVBP.Configs
                     requirements: "Stone,50",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -1669,6 +3519,7 @@ namespace MVBP.Configs
                     requirements: "Stone,75",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -1706,7 +3557,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Stone,175",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1719,7 +3571,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Stone,350",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1744,7 +3597,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Stone,200",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1771,6 +3625,7 @@ namespace MVBP.Configs
                     requirements: "Stone,24",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -1785,6 +3640,7 @@ namespace MVBP.Configs
                     requirements: "Stone,16",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -1799,6 +3655,7 @@ namespace MVBP.Configs
                     requirements: "Stone,24",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -1813,6 +3670,7 @@ namespace MVBP.Configs
                     requirements: "Stone,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -1827,6 +3685,7 @@ namespace MVBP.Configs
                     requirements: "Stone,24",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -1854,7 +3713,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1867,7 +3727,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1881,6 +3742,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,10",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -1894,7 +3756,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "TrophySkeleton,1",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1907,7 +3770,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -1921,6 +3785,7 @@ namespace MVBP.Configs
                     requirements: "Stone,24",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Statue
                 )
             },
@@ -1935,6 +3800,7 @@ namespace MVBP.Configs
                     requirements: "Stone,24",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Statue
                 )
             },
@@ -1949,6 +3815,7 @@ namespace MVBP.Configs
                     requirements: "Stone,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Statue
                 )
             },
@@ -1963,6 +3830,7 @@ namespace MVBP.Configs
                     requirements: "Stone,24",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Statue
                 )
             },
@@ -1977,6 +3845,7 @@ namespace MVBP.Configs
                     requirements: "Stone,16",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Statue
                 )
             },
@@ -1991,6 +3860,7 @@ namespace MVBP.Configs
                     requirements: "ElderBark,10",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2005,6 +3875,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2019,6 +3890,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2033,6 +3905,7 @@ namespace MVBP.Configs
                     requirements: "ElderBark,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2047,6 +3920,7 @@ namespace MVBP.Configs
                     requirements: "ElderBark,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2061,7 +3935,22 @@ namespace MVBP.Configs
                     requirements: "ElderBark,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
+                )
+            },
+            {
+                "TESTTOWER",
+                new PrefabDB(
+                    name: "TESTTOWER",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2075,8 +3964,37 @@ namespace MVBP.Configs
                     requirements: "IronNails,100;DeerHide,10;FineWood,40;ElderBark,40",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Trader ship",
                     pieceGroup: PieceGroup.Ship
+                )
+            },
+            {
+                "TreasureChest_ashland_stone",
+                new PrefabDB(
+                    name: "TreasureChest_ashland_stone",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "TreasureChest_charredfortress",
+                new PrefabDB(
+                    name: "TreasureChest_charredfortress",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2090,6 +4008,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Black marble chest",
                     pieceGroup: PieceGroup.Chest
                 )
@@ -2105,6 +4024,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,10;Copper,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr chest",
                     pieceGroup: PieceGroup.Chest
                 )
@@ -2120,6 +4040,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,10;Copper,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr chest (large)",
                     pieceGroup: PieceGroup.Chest
                 )
@@ -2135,6 +4056,7 @@ namespace MVBP.Configs
                     requirements: "Stone,10;RoundLog,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Stone chest (mossy)",
                     pieceGroup: PieceGroup.Chest
                 )
@@ -2150,6 +4072,7 @@ namespace MVBP.Configs
                     requirements: "Stone,10;Crystal,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Stone chest (snow)",
                     pieceGroup: PieceGroup.Chest
                 )
@@ -2165,6 +4088,7 @@ namespace MVBP.Configs
                     requirements: "Stone,10;ElderBark,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Stone chest (dark moss)",
                     pieceGroup: PieceGroup.Chest
                 )
@@ -2180,8 +4104,37 @@ namespace MVBP.Configs
                     requirements: "Stone,10;RoundLog,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Stone chest (mossy, big)",
                     pieceGroup: PieceGroup.Chest
+                )
+            },
+            {
+                "UnstableLavaRock",
+                new PrefabDB(
+                    name: "UnstableLavaRock",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "VineAsh",
+                new PrefabDB(
+                    name: "VineAsh",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2195,6 +4148,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,16",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2209,6 +4163,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,16",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2223,6 +4178,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,16",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2237,6 +4193,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2251,6 +4208,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,64;Sap,10",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2263,7 +4221,206 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "BlackMarble,100",
-                    spawnOnDestroyed: "sfx_rock_destroyed"
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false,
+                    spawnOnDestroyed: sfx_rock_destroyed
+                )
+            },
+            {
+                "ashland_pot1_green",
+                new PrefabDB(
+                    name: "ashland_pot1_green",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "ashland_pot1_red",
+                new PrefabDB(
+                    name: "ashland_pot1_red",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "ashland_pot2_green",
+                new PrefabDB(
+                    name: "ashland_pot2_green",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "ashland_pot2_red",
+                new PrefabDB(
+                    name: "ashland_pot2_red",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "ashland_pot3_green",
+                new PrefabDB(
+                    name: "ashland_pot3_green",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "ashland_pot3_red",
+                new PrefabDB(
+                    name: "ashland_pot3_red",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "ashwood_arch_bottom",
+                new PrefabDB(
+                    name: "ashwood_arch_bottom",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "ashwood_arch_top",
+                new PrefabDB(
+                    name: "ashwood_arch_top",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "ashwood_wall_beam_26_alt",
+                new PrefabDB(
+                    name: "ashwood_wall_beam_26_alt",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "ashwood_wall_beam_45_alt",
+                new PrefabDB(
+                    name: "ashwood_wall_beam_45_alt",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "ashwood_wall_cross_26_alt",
+                new PrefabDB(
+                    name: "ashwood_wall_cross_26_alt",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "ashwood_wall_cross_45_alt",
+                new PrefabDB(
+                    name: "ashwood_wall_cross_45_alt",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "asksvin_carrion",
+                new PrefabDB(
+                    name: "asksvin_carrion",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "asksvin_carrion2",
+                new PrefabDB(
+                    name: "asksvin_carrion2",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2277,6 +4434,7 @@ namespace MVBP.Configs
                     requirements: "FineWood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Barrel",
                     pieceDesc: "",
                     pieceGroup: PieceGroup.Misc
@@ -2293,6 +4451,7 @@ namespace MVBP.Configs
                     requirements: "BeechSeeds,1,Wood,20",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2307,6 +4466,7 @@ namespace MVBP.Configs
                     requirements: "BeechSeeds,1,Wood,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -2321,6 +4481,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,8;Copper,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2335,6 +4496,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2348,7 +4510,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2361,7 +4524,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2375,6 +4539,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,6",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Black marble plinth (wide)",
                     pieceGroup: PieceGroup.BlackMarble
                 )
@@ -2390,6 +4555,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,16",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2404,6 +4570,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2418,6 +4585,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,8",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2432,6 +4600,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2446,6 +4615,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2460,6 +4630,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,8",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2474,6 +4645,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,32",
                     clipEverything: false,
                     clipGround: true,
+                    placementPatch: false,
                     pieceName: "Black marble floor 8x8",
                     pieceGroup: PieceGroup.BlackMarble
                 )
@@ -2489,6 +4661,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2503,6 +4676,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2517,6 +4691,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,6",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2531,6 +4706,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,6",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2545,6 +4721,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,6",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Black marble cornice (wide)",
                     pieceGroup: PieceGroup.BlackMarble
                 )
@@ -2560,6 +4737,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,8",
                     clipEverything: false,
                     clipGround: true,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2574,6 +4752,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2588,6 +4767,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2602,8 +4782,8 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,8",
                     clipEverything: false,
                     clipGround: false,
-                    pieceGroup: PieceGroup.BlackMarble,
-                    placementPatch: true
+                    placementPatch: true,
+                    pieceGroup: PieceGroup.BlackMarble
                 )
             },
             {
@@ -2617,8 +4797,8 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,8",
                     clipEverything: false,
                     clipGround: false,
-                    pieceGroup: PieceGroup.BlackMarble,
-                    placementPatch: true
+                    placementPatch: true,
+                    pieceGroup: PieceGroup.BlackMarble
                 )
             },
             {
@@ -2632,6 +4812,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2646,6 +4827,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2660,6 +4842,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2674,6 +4857,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2688,6 +4872,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.BlackMarble
                 )
             },
@@ -2702,6 +4887,7 @@ namespace MVBP.Configs
                     requirements: "Wood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -2716,6 +4902,7 @@ namespace MVBP.Configs
                     requirements: "Crystal,10",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ice
                 )
             },
@@ -2730,6 +4917,7 @@ namespace MVBP.Configs
                     requirements: "Crystal,2",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ice
                 )
             },
@@ -2744,6 +4932,7 @@ namespace MVBP.Configs
                     requirements: "Crystal,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ice
                 )
             },
@@ -2758,6 +4947,7 @@ namespace MVBP.Configs
                     requirements: "Crystal,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ice
                 )
             },
@@ -2772,7 +4962,120 @@ namespace MVBP.Configs
                     requirements: "Crystal,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ice
+                )
+            },
+            {
+                "charred_shieldgenerator",
+                new PrefabDB(
+                    name: "charred_shieldgenerator",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "cliff_ashlands1_frac",
+                new PrefabDB(
+                    name: "cliff_ashlands1_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "cliff_ashlands2_frac",
+                new PrefabDB(
+                    name: "cliff_ashlands2_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "cliff_ashlands4_frac",
+                new PrefabDB(
+                    name: "cliff_ashlands4_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "cliff_ashlands6_frac",
+                new PrefabDB(
+                    name: "cliff_ashlands6_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "cliff_ashlands7_HalfArch_frac",
+                new PrefabDB(
+                    name: "cliff_ashlands7_HalfArch_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "cliff_ashlands_Arch_frac",
+                new PrefabDB(
+                    name: "cliff_ashlands_Arch_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "cliff_ashlandsflowrock_frac",
+                new PrefabDB(
+                    name: "cliff_ashlandsflowrock_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2812,6 +5115,7 @@ namespace MVBP.Configs
                     requirements: "Stone,350",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -2826,6 +5130,7 @@ namespace MVBP.Configs
                     requirements: "Stone,350",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -2853,6 +5158,7 @@ namespace MVBP.Configs
                     requirements: "Stone,175",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -2867,6 +5173,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Banner
                 )
             },
@@ -2881,6 +5188,7 @@ namespace MVBP.Configs
                     requirements: "JuteRed,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Banner
                 )
             },
@@ -2895,6 +5203,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Banner
                 )
             },
@@ -2908,7 +5217,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2921,7 +5231,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2934,7 +5245,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "BlackMarble,40;DvergrKeyFragment,4;Iron,12",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2948,6 +5260,7 @@ namespace MVBP.Configs
                     requirements: "Iron,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Iron
                 )
             },
@@ -2962,6 +5275,7 @@ namespace MVBP.Configs
                     requirements: "Iron,4",
                     clipEverything: false,
                     clipGround: true,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Iron
                 )
             },
@@ -2976,6 +5290,7 @@ namespace MVBP.Configs
                     requirements: "Iron,1;Wisp,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Torch
                 )
             },
@@ -2990,6 +5305,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -3004,6 +5320,7 @@ namespace MVBP.Configs
                     requirements: "Iron,1;Wisp,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Torch
                 )
             },
@@ -3018,6 +5335,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -3031,7 +5349,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.BlackForge),
                     requirements: "YggdrasilWood,5;BlackMarble,5;BlackCore,1",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3045,6 +5364,7 @@ namespace MVBP.Configs
                     requirements: "JuteBlue,6;FineWood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Banner
                 )
             },
@@ -3059,6 +5379,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,20;Bronze,5;Resin,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3073,6 +5394,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,8;ScaleHide,2;IronNails,5",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Bed,
                     playerBasePatch: true
                 )
@@ -3088,6 +5410,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Chair
                 )
             },
@@ -3102,7 +5425,22 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Misc
+                )
+            },
+            {
+                "dvergrprops_crate_ashlands",
+                new PrefabDB(
+                    name: "dvergrprops_crate_ashlands",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3116,6 +5454,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr component crate",
                     pieceDesc: "",
                     pieceGroup: PieceGroup.Misc
@@ -3132,6 +5471,7 @@ namespace MVBP.Configs
                     requirements: "JuteBlue,6;FineWood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Banner
                 )
             },
@@ -3141,11 +5481,12 @@ namespace MVBP.Configs
                     name: "dvergrprops_hooknchain",
                     enabled: true,
                     allowedInDungeons: false,
-                    category: HammerCategories.Stonecutter,
+                    category: HammerCategories.Misc,
                     craftingStation: nameof(CraftingStations.BlackForge),
                     requirements: "Chain,2;Iron,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr hook & chain",
                     pieceGroup: PieceGroup.Misc
                 )
@@ -3161,6 +5502,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3175,8 +5517,9 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
-                    pieceGroup: PieceGroup.Dvergr,
-                    placementOffset: new Vector3(-1f, 0f, 0f)
+                    placementPatch: false,
+                    placementOffset: new Vector3(-1f, 0f, 0f),
+                    pieceGroup: PieceGroup.Dvergr
                 )
             },
             {
@@ -3190,6 +5533,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,4;IronNails,5",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3204,6 +5548,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Chair
                 )
             },
@@ -3218,6 +5563,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,6;IronNails,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Table
                 )
             },
@@ -3232,6 +5578,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3246,6 +5593,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3260,6 +5608,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr wood pole (large)",
                     pieceGroup: PieceGroup.Dvergr
                 )
@@ -3275,6 +5624,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3289,6 +5639,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3303,6 +5654,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr wood wall 4x4",
                     pieceGroup: PieceGroup.Dvergr
                 )
@@ -3318,6 +5670,7 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,8",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3332,6 +5685,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Door hanging (creep)",
                     pieceDesc: "",
                     pieceGroup: PieceGroup.Misc
@@ -3343,11 +5697,12 @@ namespace MVBP.Configs
                     name: "dvergrtown_secretdoor",
                     enabled: true,
                     allowedInDungeons: false,
-                    category: HammerCategories.Stonecutter,
+                    category: HammerCategories.Building,
                     craftingStation: nameof(CraftingStations.BlackForge),
                     requirements: "BlackMarble,12;Eitr,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr secret door",
                     pieceGroup: PieceGroup.Dvergr
                 )
@@ -3358,11 +5713,12 @@ namespace MVBP.Configs
                     name: "dvergrtown_slidingdoor",
                     enabled: true,
                     allowedInDungeons: false,
-                    category: HammerCategories.Stonecutter,
+                    category: HammerCategories.Building,
                     craftingStation: nameof(CraftingStations.BlackForge),
                     requirements: "BlackMarble,32;Copper,8",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr sliding door",
                     pieceGroup: PieceGroup.Dvergr
                 )
@@ -3378,6 +5734,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,5;CopperScrap,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3392,6 +5749,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr wood beam (creep)",
                     pieceGroup: PieceGroup.Dvergr
                 )
@@ -3407,6 +5765,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,8;Chain,2;Iron,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3421,6 +5780,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr wood pole (creep)",
                     pieceGroup: PieceGroup.Dvergr
                 )
@@ -3436,6 +5796,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3450,6 +5811,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3464,6 +5826,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3478,6 +5841,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,20",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3492,6 +5856,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,12",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -3506,7 +5871,22 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,10;IronNails,6",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
+                )
+            },
+            {
+                "fader_bellholder",
+                new PrefabDB(
+                    name: "fader_bellholder",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3519,7 +5899,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "WolfHairBundle,2",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3544,6 +5925,7 @@ namespace MVBP.Configs
                     requirements: "Stone,5;Wood,2;BlackCore,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Campfire (everburning)",
                     pieceDesc: "Burns eternally without fuel.",
                     pieceGroup: PieceGroup.Fire
@@ -3560,6 +5942,7 @@ namespace MVBP.Configs
                     requirements: "Ironpit,1;Wood,1;BlackCore,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Firepit iron (everburning)",
                     pieceDesc: "Burns eternally without fuel.",
                     pieceGroup: PieceGroup.Fire
@@ -3574,7 +5957,10 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Crystal,24",
-                    spawnOnDestroyed: "fx_crystal_destruction"
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false,
+                    spawnOnDestroyed: fx_crystal_destruction
                 )
             },
             {
@@ -3587,7 +5973,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3624,7 +6011,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Softtissue,64",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3649,7 +6037,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Iron,24",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3674,7 +6063,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Iron,24",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3699,7 +6089,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "BlackMarble,64",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3724,7 +6115,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "BlackMarble,32",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3749,7 +6141,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Iron,16",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3774,7 +6167,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Iron,16",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -3788,6 +6182,7 @@ namespace MVBP.Configs
                     requirements: "Wood,1;DeerHide,1;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Banner
                 )
             },
@@ -3802,6 +6197,7 @@ namespace MVBP.Configs
                     requirements: "Wood,8;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Bed,
                     playerBasePatch: true
                 )
@@ -3817,6 +6213,7 @@ namespace MVBP.Configs
                     requirements: "Wood,2;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -3831,6 +6228,7 @@ namespace MVBP.Configs
                     requirements: "Wood,1;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -3845,6 +6243,7 @@ namespace MVBP.Configs
                     requirements: "Wood,1;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -3859,6 +6258,7 @@ namespace MVBP.Configs
                     requirements: "Wood,1;DeerHide,1;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -3873,6 +6273,7 @@ namespace MVBP.Configs
                     requirements: "Wood,1;DeerHide,1;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -3887,6 +6288,7 @@ namespace MVBP.Configs
                     requirements: "Wood,4;DeerHide,4;Tar,1",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -3901,6 +6303,7 @@ namespace MVBP.Configs
                     requirements: "Wood,2;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -3915,6 +6318,7 @@ namespace MVBP.Configs
                     requirements: "Wood,2;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -3929,6 +6333,7 @@ namespace MVBP.Configs
                     requirements: "Wood,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Rug straw (large)",
                     pieceDesc: "",
                     pieceGroup: PieceGroup.Rug
@@ -3945,6 +6350,7 @@ namespace MVBP.Configs
                     requirements: "Wood,2;GoblinTotem,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -3959,6 +6365,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -3973,6 +6380,7 @@ namespace MVBP.Configs
                     requirements: "Wood,1;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -3987,6 +6395,7 @@ namespace MVBP.Configs
                     requirements: "Wood,2;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -4001,6 +6410,7 @@ namespace MVBP.Configs
                     requirements: "BoneFragments,6;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -4015,6 +6425,7 @@ namespace MVBP.Configs
                     requirements: "Stone,1;Tar,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Goblin
                 )
             },
@@ -4028,7 +6439,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4055,6 +6467,7 @@ namespace MVBP.Configs
                     requirements: "Stone,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -4068,7 +6481,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4093,7 +6507,22 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Crystal,32",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "iron_floor_1x1",
+                new PrefabDB(
+                    name: "iron_floor_1x1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4107,7 +6536,22 @@ namespace MVBP.Configs
                     requirements: "Iron,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Iron
+                )
+            },
+            {
+                "lavabomb_rock1",
+                new PrefabDB(
+                    name: "lavabomb_rock1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4121,6 +6565,7 @@ namespace MVBP.Configs
                     requirements: "Stone,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Stone chest (light moss)",
                     pieceGroup: PieceGroup.Chest
                 )
@@ -4135,7 +6580,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "BoneFragments,30",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4148,7 +6594,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Stone,4",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4161,7 +6608,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "Stone,4",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4170,11 +6618,12 @@ namespace MVBP.Configs
                     name: "metalbar_1x2",
                     enabled: true,
                     allowedInDungeons: false,
-                    category: HammerCategories.Stonecutter,
+                    category: HammerCategories.Building,
                     craftingStation: nameof(CraftingStations.BlackForge),
                     requirements: "BlackMarble,2;Copper,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Black marble 1x2 enforced",
                     pieceDesc: "",
                     pieceGroup: PieceGroup.BlackMarble
@@ -4191,8 +6640,23 @@ namespace MVBP.Configs
                     requirements: "Eitr,10;Wisp,4",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Mist volume",
                     pieceDesc: "Warning: requires devcommands to remove."
+                )
+            },
+            {
+                "morgenhole_pile",
+                new PrefabDB(
+                    name: "morgenhole_pile",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4206,6 +6670,7 @@ namespace MVBP.Configs
                     requirements: "FineWood,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Chair
                 )
             },
@@ -4220,6 +6685,7 @@ namespace MVBP.Configs
                     requirements: "FineWood,10;IronNails,20",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Table
                 )
             },
@@ -4256,7 +6722,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "IronScrap,10",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4280,7 +6747,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "IronScrap,10",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4295,6 +6763,34 @@ namespace MVBP.Configs
                 )
             },
             {
+                "piece_Charred_Balista",
+                new PrefabDB(
+                    name: "piece_Charred_Balista",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "piece_blackwood_bench",
+                new PrefabDB(
+                    name: "piece_blackwood_bench",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
                 "piece_dvergr_pole",
                 new PrefabDB(
                     name: "piece_dvergr_pole",
@@ -4305,6 +6801,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr wood pole",
                     pieceGroup: PieceGroup.Dvergr
                 )
@@ -4320,6 +6817,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,16;IronNails,24",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
                 )
             },
@@ -4334,7 +6832,92 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,5",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Dvergr
+                )
+            },
+            {
+                "piece_pot1_cracked",
+                new PrefabDB(
+                    name: "piece_pot1_cracked",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "piece_pot1_red",
+                new PrefabDB(
+                    name: "piece_pot1_red",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "piece_pot2_cracked",
+                new PrefabDB(
+                    name: "piece_pot2_cracked",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "piece_pot2_red",
+                new PrefabDB(
+                    name: "piece_pot2_red",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "piece_pot3_cracked",
+                new PrefabDB(
+                    name: "piece_pot3_cracked",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "piece_pot3_red",
+                new PrefabDB(
+                    name: "piece_pot3_red",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4348,6 +6931,7 @@ namespace MVBP.Configs
                     requirements: "GreydwarfEye,10;Stone,20;BlackCore,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Dvergr portal",
                     pieceDesc: "Connects another portal with equal or no tag.",
                     pieceGroup: PieceGroup.Portal
@@ -4391,6 +6975,7 @@ namespace MVBP.Configs
                     requirements: "Stone,350",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -4418,6 +7003,7 @@ namespace MVBP.Configs
                     requirements: "Stone,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -4445,6 +7031,7 @@ namespace MVBP.Configs
                     requirements: "Stone,64",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -4472,6 +7059,7 @@ namespace MVBP.Configs
                     requirements: "Crystal,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -4499,6 +7087,7 @@ namespace MVBP.Configs
                     requirements: "Stone,100",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -4526,7 +7115,22 @@ namespace MVBP.Configs
                     requirements: "Stone,64;SilverOre,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
+                )
+            },
+            {
+                "rock4_ashlands_frac",
+                new PrefabDB(
+                    name: "rock4_ashlands_frac",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4553,6 +7157,7 @@ namespace MVBP.Configs
                     requirements: "Stone,64",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -4580,6 +7185,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: true,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -4607,6 +7213,7 @@ namespace MVBP.Configs
                     requirements: "Stone,64",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -4634,6 +7241,7 @@ namespace MVBP.Configs
                     requirements: "Stone,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -4652,21 +7260,6 @@ namespace MVBP.Configs
                 )
             },
             {
-                "rock_mistlands2",
-                new PrefabDB(
-                    name: "rock_mistlands2",
-                    enabled: true,
-                    allowedInDungeons: false,
-                    category: HammerCategories.Nature,
-                    craftingStation: nameof(CraftingStations.None),
-                    requirements: "Stone,48",
-                    clipEverything: true,
-                    pieceName: "Rock (black, alt)",
-                    pieceGroup: PieceGroup.Rock,
-                    spawnOnDestroyed: "sfx_rock_destroyed"
-                )
-            },
-            {
                 "rock_mistlands1_frac",
                 new PrefabDB(
                     name: "rock_mistlands1_frac",
@@ -4677,8 +7270,26 @@ namespace MVBP.Configs
                     requirements: "Stone,48",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Rock (black)",
                     pieceGroup: PieceGroup.Rock
+                )
+            },
+            {
+                "rock_mistlands2",
+                new PrefabDB(
+                    name: "rock_mistlands2",
+                    enabled: true,
+                    allowedInDungeons: false,
+                    category: HammerCategories.Nature,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "Stone,48",
+                    clipEverything: true,
+                    clipGround: false,
+                    placementPatch: false,
+                    pieceName: "Rock (black, alt)",
+                    pieceGroup: PieceGroup.Rock,
+                    spawnOnDestroyed: sfx_rock_destroyed
                 )
             },
             {
@@ -4692,6 +7303,7 @@ namespace MVBP.Configs
                     requirements: "Stone,350",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -4706,6 +7318,7 @@ namespace MVBP.Configs
                     requirements: "ElderBark,2",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -4720,6 +7333,7 @@ namespace MVBP.Configs
                     requirements: "ElderBark,4",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -4734,6 +7348,7 @@ namespace MVBP.Configs
                     requirements: "ElderBark,4",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -4748,6 +7363,7 @@ namespace MVBP.Configs
                     requirements: "ElderBark,4",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -4775,7 +7391,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "FineWood,8",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4788,7 +7405,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "FineWood,16",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4802,6 +7420,7 @@ namespace MVBP.Configs
                     requirements: "FineWood,8",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     placementOffset: new Vector3(0f, -1.5f, 6f)
                 )
             },
@@ -4815,7 +7434,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "FineWood,16",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4828,7 +7448,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "FineWood,10",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4842,6 +7463,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -4856,7 +7478,22 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
+                )
+            },
+            {
+                "siege_wall_1x1",
+                new PrefabDB(
+                    name: "siege_wall_1x1",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4870,6 +7507,7 @@ namespace MVBP.Configs
                     requirements: "Wood,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Wood plank",
                     pieceDesc: "",
                     pieceGroup: PieceGroup.Wood
@@ -4899,6 +7537,7 @@ namespace MVBP.Configs
                     requirements: "Stone,50;SilverOre,50",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Ore
                 )
             },
@@ -4913,6 +7552,7 @@ namespace MVBP.Configs
                     requirements: "Stone,16",
                     clipEverything: false,
                     clipGround: true,
+                    placementPatch: false,
                     pieceName: "Stone floor 4x4",
                     pieceGroup: PieceGroup.Stone
                 )
@@ -4928,6 +7568,7 @@ namespace MVBP.Configs
                     requirements: "Stone,16",
                     clipEverything: false,
                     clipGround: true,
+                    placementPatch: false,
                     pieceName: "Stone floor 4x4 (2)",
                     pieceGroup: PieceGroup.Stone
                 )
@@ -4943,6 +7584,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -4956,7 +7598,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -4970,6 +7613,7 @@ namespace MVBP.Configs
                     requirements: "Iron,4",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Iron
                 )
             },
@@ -4999,6 +7643,7 @@ namespace MVBP.Configs
                     requirements: "Tar,50",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceName: "Crystallized tar"
                 )
             },
@@ -5012,7 +7657,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.BlackForge),
                     requirements: "FineWood,32",
                     clipEverything: true,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -5025,7 +7671,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -5039,6 +7686,7 @@ namespace MVBP.Configs
                     requirements: "Wood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Wood
                 )
             },
@@ -5053,7 +7701,22 @@ namespace MVBP.Configs
                     requirements: "Wood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Wood
+                )
+            },
+            {
+                "veg_skull_Ashlands",
+                new PrefabDB(
+                    name: "veg_skull_Ashlands",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -5066,7 +7729,8 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
-                    clipGround: false
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -5080,7 +7744,22 @@ namespace MVBP.Configs
                     requirements: "Wood,2",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
+                )
+            },
+            {
+                "volture_strawpile",
+                new PrefabDB(
+                    name: "volture_strawpile",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -5107,6 +7786,7 @@ namespace MVBP.Configs
                     requirements: "Stone,32",
                     clipEverything: true,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Rock
                 )
             },
@@ -5121,6 +7801,7 @@ namespace MVBP.Configs
                     requirements: "Wood,1",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Wood
                 )
             },
@@ -5135,6 +7816,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
@@ -5149,6 +7831,7 @@ namespace MVBP.Configs
                     requirements: "YggdrasilWood,10",
                     clipEverything: false,
                     clipGround: false,
+                    placementPatch: false,
                     pieceGroup: PieceGroup.Flora
                 )
             },
