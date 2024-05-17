@@ -3,6 +3,7 @@
 using MVBP.Configs;
 using MVBP.Extensions;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
@@ -148,6 +149,11 @@ namespace MVBP.Helpers
                 name = name.RemovePrefix("forestcrypt");
                 name = name.RemovePrefix("forest crypt").TrimStart();
                 name = string.Concat(name, " (tomb)");
+            }
+
+            // Add degree symbol to names
+            if (name.EndsWithAny("26", "45")){
+                name = string.Concat(name, "\u00B0");
             }
 
             name = IsLastCharDigit.Replace(name, " ($1)");
