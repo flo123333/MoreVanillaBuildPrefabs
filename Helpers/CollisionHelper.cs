@@ -24,7 +24,8 @@ namespace MVBP.Helpers
         internal static void PatchCollider(GameObject prefab)
         {
             // Needed to make some things work, like Stalagmite, Rock_destructible, Rock_7, silvervein, etc.
-            var desiredBounds = GetRendererBounds(prefab);
+            // var desiredBounds = GetRendererBounds(prefab);
+            var desiredBounds = GetMeshBounds(prefab);
             AddBoxCollider(prefab, desiredBounds.center, desiredBounds.size);
         }
 
