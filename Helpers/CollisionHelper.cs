@@ -10,11 +10,29 @@ namespace MVBP.Helpers
 {
     internal static class CollisionHelper
     {
-        internal static void AddBoxCollider(GameObject prefab, Vector3 center, Vector3 size)
+        /// <summary>
+        ///     Adds a BoxCollider to a GameObject based on the properties
+        ///     provided.
+        /// </summary>
+        /// <param name="prefab">GameObject to add the BoxCollider too.</param>
+        /// <param name="center">The center of the BoxCollider.</param>
+        /// <param name="size">The size of the BoxCollider.</param>
+        /// <param name="local">If True then the center and size are
+        /// assumed to already be relative to the GameObject, if false
+        /// then they are transformed into the local space or the GameObject
+        /// .</param>
+        internal static void AddBoxCollider(GameObject prefab, Vector3 center, Vector3 size, bool local = true)
         {
             var collider = prefab.AddComponent<BoxCollider>();
-            collider.center = center;
-            collider.size = size;
+            if (local){
+                collider.center = center;
+                collider.size = size;
+            }
+            else{
+                collider.center = prefab.transform.InverseTransformPoint(center);
+                collider.size = prefab.transform.InverseTransformPoint(size);
+            }
+
         }
 
 
