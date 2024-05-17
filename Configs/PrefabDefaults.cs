@@ -567,7 +567,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -581,7 +582,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -595,7 +597,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -609,7 +612,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -623,7 +627,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -637,7 +642,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -651,7 +657,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
