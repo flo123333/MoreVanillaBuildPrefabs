@@ -50,7 +50,12 @@ namespace MVBP.Helpers
 
             // Try just using the mesh bounds instead
             var desiredBounds = GetMeshBounds(prefab);
-            AddBoxCollider(prefab, desiredBounds.center, desiredBounds.size);
+            AddBoxCollider(
+                prefab,
+                desiredBounds.center,
+                desiredBounds.size,
+                local: false
+            );
         }
 
 
