@@ -38,7 +38,7 @@ namespace MVBP.Helpers
 
         /// <summary>
         ///     Creates a bounding box that encapsulating the bounds of
-        ///     all Renderer's attached to the GameObject
+        ///     all Renderer components attached to the GameObject
         /// </summary>
         /// <param name="prefab"></param>
         /// <returns></returns>
