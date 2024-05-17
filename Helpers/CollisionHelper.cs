@@ -1,7 +1,9 @@
 ﻿// Ignore Spelling: MVBP
 
 using System.Collections.Generic;
+using System.Numerics;
 using Jotunn;
+using Jotunn.Extensions;
 using UnityEngine;
 
 namespace MVBP.Helpers
@@ -24,7 +26,11 @@ namespace MVBP.Helpers
         internal static void PatchCollider(GameObject prefab)
         {
             // Needed to make some things work, like Stalagmite, Rock_destructible, Rock_7, silvervein, etc.
+
+            // Renderer bounds include animations in some cases
             // var desiredBounds = GetRendererBounds(prefab);
+
+            // Try just using the mesh bounds instead
             var desiredBounds = GetMeshBounds(prefab);
             AddBoxCollider(prefab, desiredBounds.center, desiredBounds.size);
         }
@@ -48,24 +54,35 @@ namespace MVBP.Helpers
 
         /// <summary>
         ///     Creates a bounding box that encapsulating the bounds of
-        ///     all Meshes attached to the GameObject via MeshFilter or
+        ///     all Meshes attached to the GameObject via MeshRenderer or
         ///     SkinnedMeshRenderer components
         /// </summary>
         /// <param name="prefab"></param>
         /// <returns></returns>
         internal static Bounds GetMeshBounds(GameObject prefab){
             Bounds desiredBounds = new();
-            foreach (MeshFilter meshFilter in prefab.GetComponentsInChildren<MeshFilter>())
+            foreach (MeshRenderer meshRenderer in prefab.GetComponentsInChildren<MeshRenderer>())
             {
-                desiredBounds.Encapsulate(meshFilter.mesh.bounds);
+                // Uses world space bounds
+                desiredBounds.Encapsulate(meshRenderer.bounds);
             }
 
+            // Need to use mesh bounds here rather than skinned mesh renderer
+            // bounds those bounds include animations and can be much larger
             foreach (SkinnedMeshRenderer skinMeshRender in prefab.GetComponentsInChildren<SkinnedMeshRenderer>())
             {
-                desiredBounds.Encapsulate(skinMeshRender.mesh.bounds);
+                // Convert max and min points of local bounds into world space
+                var bounds = skinMeshRender.mesh.bounds;
+                var points = new Vector3[] {bounds.min, bounds.max};
+                var trans = skinMeshRender.transform;
+                trans.TransformPoints(points);
+
+                desiredBounds.Encapsulate(points[0]);
+                desiredBounds.Encapsulate(points[1]);
             }
             return desiredBounds;
         }
+
 
         /// <summary>
         ///     Creates a bounding box that encapsulating the bounds of
