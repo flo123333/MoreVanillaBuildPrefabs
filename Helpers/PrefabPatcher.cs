@@ -913,6 +913,8 @@ namespace MVBP.Helpers
             }
         }
 
+        // TODO: split this out into it's own PlayePiecePatcher class
+
         /// <summary>
         ///     Apply patches to player built pieces.
         ///     Called after Piece.Awake and Piece.SetCreator.
