@@ -15,7 +15,7 @@ namespace MVBP.Patches
     // [Info: MorePrefabs] Current State: 0
 
     [HarmonyPatch(typeof(Door))]
-    internal static class DoorPatch
+    internal static class SecretDoorPatch
     {
         [HarmonyPrefix]
         [HarmonyPatch(nameof(Door.RPC_UseDoor))]
