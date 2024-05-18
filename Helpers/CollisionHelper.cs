@@ -1,8 +1,6 @@
 ﻿// Ignore Spelling: MVBP
 
 using System.Collections.Generic;
-using Jotunn;
-using Jotunn.Extensions;
 using UnityEngine;
 
 namespace MVBP.Helpers
