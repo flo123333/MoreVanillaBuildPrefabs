@@ -101,7 +101,7 @@ namespace MVBP.Helpers
                 prefab.GetComponent<TombStone>() ||
                 prefab.GetComponent<LiquidVolume>() ||
                 prefab.GetComponent<Gibber>() ||
-                prefab.GetComponent<TimedDestruction>() ||
+                //prefab.GetComponent<TimedDestruction>() ||
                 prefab.GetComponent<ShipConstructor>() ||
                 prefab.GetComponent<TriggerSpawner>() ||
                 prefab.GetComponent<TeleportAbility>() ||
@@ -157,17 +157,10 @@ namespace MVBP.Helpers
             "horizontal_web", // has no mesh?
             "tolroko_flyer", // It's a little space ship! Instantiating it throws errors though.
             "turf_roof_wall", // Duplicate of "wood_roof_wall"
-            "IceBlocker", // disappears after placing
             "Pickable_Item", // buggy and weird
             "Pickable_Barley_Wild",
             "Pickable_Flax_Wild",
             "Pickable_DolmenTreasure", // random items
-
-            // Patched to spawn SFX instead
-            // Spawns giant boulder when damaged (much larger than original)
-            //"flying_core",
-            //"ancient_skull",
-            //"rock_mistlands2",
 
             // Causes errors when destroying (even if spawned in Vanilla game)
             "fenrirhide_hanging_door",
