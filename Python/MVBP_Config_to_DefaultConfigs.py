@@ -30,7 +30,8 @@ class PrefabConfig:
             "name",
             "requirements",
             "pieceDesc",
-            "pieceName"
+            "pieceName",
+            "spawnonDestroyed"
         ]
     )
 
