@@ -20,6 +20,8 @@ namespace MVBP.Configs {
             this.pieceDesc = prefabDB.pieceDesc;
             this.pieceGroup = prefabDB.pieceGroup;
             this.playerBasePatch = prefabDB.playerBasePatch;
+            this.invWidth = prefabDB.invWidth;
+            this.invHeight = prefabDB.invHeight;
         }
     }
 }

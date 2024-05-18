@@ -23,6 +23,8 @@ namespace MVBP.Configs
         public PieceGroup pieceGroup;
         public bool playerBasePatch;
         public string? spawnOnDestroyed;
+        public uint? invWidth;
+        public uint? invHeight;
 
         internal GameObject Prefab
         {
@@ -48,7 +50,9 @@ namespace MVBP.Configs
             string pieceDesc = null,
             PieceGroup pieceGroup = default,
             bool playerBasePatch = false,
-            string? spawnOnDestroyed = null
+            string? spawnOnDestroyed = null,
+            uint? invWidth = null,
+            uint? invHeight = null
         )
         {
             this.name = name;
@@ -66,6 +70,8 @@ namespace MVBP.Configs
             this.pieceGroup = pieceGroup;
             this.playerBasePatch = playerBasePatch;
             this.spawnOnDestroyed = spawnOnDestroyed;
+            this.invWidth = invWidth;
+            this.invHeight = invHeight;
         }
 
         /// <summary>
