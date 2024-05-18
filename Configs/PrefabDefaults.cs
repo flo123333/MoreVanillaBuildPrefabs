@@ -568,7 +568,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false
-                    # placementOffset: new Vector3(0f, -0.1f, 0f)
+                    // placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -583,7 +583,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false
-                    # placementOffset: new Vector3(0f, -0.1f, 0f)
+                    // placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -598,7 +598,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false
-                    # placementOffset: new Vector3(0f, -0.1f, 0f)
+                    // placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -613,7 +613,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false
-                    # placementOffset: new Vector3(0f, -0.1f, 0f)
+                    // placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -628,7 +628,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false
-                    # placementOffset: new Vector3(0f, -0.1f, 0f)
+                    // placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -643,7 +643,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false
-                    # placementOffset: new Vector3(0f, -0.1f, 0f)
+                    // placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -658,7 +658,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false
-                    # placementOffset: new Vector3(0f, -0.1f, 0f)
+                    // placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -4231,7 +4231,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false,
-                    spawnOnDestroyed: sfx_rock_destroyed
+                    spawnOnDestroyed: "sfx_rock_destroyed"
                 )
             },
             {
@@ -5967,7 +5967,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false,
-                    spawnOnDestroyed: fx_crystal_destruction
+                    spawnOnDestroyed: "fx_crystal_destruction"
                 )
             },
             {
@@ -7296,7 +7296,7 @@ namespace MVBP.Configs
                     placementPatch: false,
                     pieceName: "Rock (black, alt)",
                     pieceGroup: PieceGroup.Rock,
-                    spawnOnDestroyed: sfx_rock_destroyed
+                    spawnOnDestroyed: "sfx_rock_destroyed"
                 )
             },
             {
