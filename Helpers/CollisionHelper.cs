@@ -93,12 +93,12 @@ namespace MVBP.Helpers
             {
                 // Convert max and min points of local bounds into world space
                 var bounds = skinMeshRender.sharedMesh.bounds;
-                var points = new Vector3[] {bounds.min, bounds.max};
                 var trans = skinMeshRender.transform;
-                trans.TransformPoints(points);
-
-                desiredBounds.Encapsulate(points[0]);
-                desiredBounds.Encapsulate(points[1]);
+                var maxPoint = trans.TransformPoint(bounds.max);
+                var minPoint = trans.TransformPoint(bounds.min);
+              
+                desiredBounds.Encapsulate(maxPoint);
+                desiredBounds.Encapsulate(minPoint);
             }
             return desiredBounds;
         }
