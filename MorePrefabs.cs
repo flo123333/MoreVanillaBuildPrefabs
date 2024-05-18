@@ -4,7 +4,6 @@ using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
-using Jotunn.Configs;
 using Jotunn.Managers;
 using Jotunn.Utils;
 using MVBP.Configs;
@@ -258,14 +257,6 @@ namespace MVBP
                 true,
                 "Set to true/enabled to patch new pieces to have comfort values like their vanilla counterparts."
             );
-
-            //EnableDoorPatches = ConfigManager.BindConfig(
-            //    CustomizationSection,
-            //    "DoorPatches (Requires Restart)",
-            //    true,
-            //    "Set to true/enabled to patch player-built instances of new doors " +
-            //    "(that do not require keys) to allow closing them even if that is normally prevented."
-            //);
 
             EnablePlayerBasePatches = ConfigManager.BindConfig(
                 CustomizationSection,
