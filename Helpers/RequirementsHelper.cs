@@ -7,6 +7,10 @@ using System.Linq;
 using UnityEngine;
 
 namespace MVBP.Helpers {
+
+    /// <summary>
+    ///     Handles parsing requirements.
+    /// </summary>
     internal static class RequirementsHelper {
         /// <summary>
         ///     Convert requirements string from cfg file to Piece.Requirement Array
@@ -53,17 +57,23 @@ namespace MVBP.Helpers {
            Pickable pickable
         ) {
             // If the pickable does not exist or does not drop an item, return the requirements array unchanged.
-            var pickableDrop = pickable?.m_itemPrefab?.GetComponent<ItemDrop>()?.m_itemData;
-            if (requirements == null || pickable == null || pickableDrop == null) {
+            if (requirements == null || 
+                !pickable || 
+                !pickable.m_itemPrefab || 
+                !pickable.m_itemPrefab.TryGetComponent(out ItemDrop pickableItem) ||
+                !pickableItem ||
+                pickableItem.m_itemData == null
+            )
+            {
                 return requirements;
             }
-
+     
             // Get dropAmount returned on picking based on world modifiers
             var pickedAmount = pickable.GetScaledDropAmount();
 
             // Check if pickable is included in piece build requirements
             foreach (var req in requirements) {
-                if (req.m_resItem.m_itemData.m_shared.m_name == pickableDrop.m_shared.m_name) {
+                if (req.m_resItem.m_itemData.m_shared.m_name == pickableItem.m_itemData.m_shared.m_name) {
                     // If build requirements for pickable item are less than
                     // the pickable drops increase them to equal it
                     if (req.m_amount < pickedAmount) {
@@ -76,7 +86,7 @@ namespace MVBP.Helpers {
             }
 
             var pickableReq = new Piece.Requirement() {
-                m_resItem = pickable?.m_itemPrefab?.GetComponent<ItemDrop>(),
+                m_resItem = pickableItem,
                 m_amount = pickedAmount,
                 m_recover = true
             };
