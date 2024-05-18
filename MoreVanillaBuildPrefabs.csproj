@@ -4,8 +4,6 @@
 		<JotunnProps>$(NuGetPackages)\jotunnlib\2.20.0\build\JotunnLib.props</JotunnProps>
 	</PropertyGroup>
 
-	<!--<Import Project="environment.props" Condition="Exists('environment.props')" />-->
-	<!--<Import Project="$(JotunnProps)" Condition="Exists('$(JotunnProps)')" />-->
 	<Import Project="ModPackageTool.targets" Condition="Exists('ModPackageTool.targets')" />
 
 	<PropertyGroup>
@@ -13,8 +11,8 @@
 		<OutputType>Library</OutputType>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<!--<LangVersion>latest</LangVersion>-->
-		<!--<LangVersion>preview</LangVersion>-->
 		<LangVersion>10.0</LangVersion>
+		<AppConfig>App.config</AppConfig>
 	</PropertyGroup>
 
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -58,12 +56,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Compile Remove="Libraries\PlanBuild\**" />
-		<EmbeddedResource Remove="Libraries\PlanBuild\**" />
-		<None Remove="Libraries\PlanBuild\**" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<None Remove="Resources\texture_portal_MainTex.png" />
 		<None Remove="Resources\texture_portal_n_BumpMap.png" />
 	</ItemGroup>
@@ -89,14 +81,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="HarmonyX" Version="2.9.0" />
 		<PackageReference Include="JotunnLib" Version="2.20.0" />
 		<PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-		<PackageReference Include="Mono.Cecil" Version="0.11.4" />
-		<PackageReference Include="MonoMod" Version="21.9.19.1" />
-		<PackageReference Include="MonoMod.RuntimeDetour" Version="22.1.29.1" />
-		<PackageReference Include="MonoMod.Utils" Version="22.1.29.1" />
-		<PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+		<PackageReference Include="Mono.Cecil" Version="0.11.5" />
 	</ItemGroup>
 
 	<ItemGroup>
