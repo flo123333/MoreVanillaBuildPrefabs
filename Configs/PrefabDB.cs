@@ -1,7 +1,6 @@
 ﻿// Ignore Spelling: MVBP
 
 using Jotunn.Configs;
-using MVBP.Helpers;
 using UnityEngine;
 
 namespace MVBP.Configs
