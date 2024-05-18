@@ -2,10 +2,10 @@
 
 using HarmonyLib;
 using MVBP.Extensions;
-using MVBP.Helpers;
 using UnityEngine.SceneManagement;
 
-namespace MVBP.Patches {
+namespace MVBP.Patches
+{
     [HarmonyPatch(typeof(ZoneSystem))]
     internal static class ZoneSystemPatch {
         /// <summary>

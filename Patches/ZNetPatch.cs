@@ -1,10 +1,10 @@
 ﻿// Ignore Spelling: MVBP
 
 using HarmonyLib;
-using MVBP.Helpers;
 using UnityEngine.SceneManagement;
 
-namespace MVBP.Patches {
+namespace MVBP.Patches
+{
     [HarmonyPatch(typeof(ZNet))]
     internal static class ZNetPatch {
         /// <summary>
