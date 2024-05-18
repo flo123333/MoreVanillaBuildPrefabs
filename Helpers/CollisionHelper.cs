@@ -1,7 +1,6 @@
 ﻿// Ignore Spelling: MVBP
 
 using System.Collections.Generic;
-using System.Numerics;
 using Jotunn;
 using Jotunn.Extensions;
 using UnityEngine;
@@ -95,7 +94,7 @@ namespace MVBP.Helpers
             foreach (SkinnedMeshRenderer skinMeshRender in prefab.GetComponentsInChildren<SkinnedMeshRenderer>())
             {
                 // Convert max and min points of local bounds into world space
-                var bounds = skinMeshRender.mesh.bounds;
+                var bounds = skinMeshRender.sharedMesh.bounds;
                 var points = new Vector3[] {bounds.min, bounds.max};
                 var trans = skinMeshRender.transform;
                 trans.TransformPoints(points);
