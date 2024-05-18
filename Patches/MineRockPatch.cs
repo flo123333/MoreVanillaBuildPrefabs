@@ -1,6 +1,7 @@
 ﻿// Ignore Spelling: MVBP
 
 using HarmonyLib;
+using MVBP;
 
 namespace MVBP.Patches
 {
@@ -20,21 +21,6 @@ namespace MVBP.Patches
         {
             Log.LogInfo("MineRock.UpdateVisability patch applied", LogLevel.Medium);
             return __instance.m_nview != null;
-        }
-
-        /// <summary>
-        ///     Patch to drop resources when MineRock is destroyed
-        /// </summary>
-        /// <param name="__instance"></param>
-        /// <param name="__result"></param>
-        [HarmonyPostfix]
-        [HarmonyPatch(nameof(MineRock.AllDestroyed))]
-        private static void AllDestroyed(MineRock __instance, ref bool __result)
-        {
-            if (__result && __instance && __instance.gameObject && __instance.gameObject.TryGetComponent(out Piece piece))
-            {
-                piece.DropResources();
-            }
         }
     }
 }
