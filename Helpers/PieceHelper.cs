@@ -179,7 +179,7 @@ namespace MVBP.Helpers
             {
                 return (Piece.PieceCategory)PieceManager.Instance.GetPieceCategory(name);
             }
-            catch (InvalidOperationException e)
+            catch (InvalidOperationException)
             {
                 Log.LogWarning($"Could not find value for Piece Category: {name}");
                 return Piece.PieceCategory.Misc;
