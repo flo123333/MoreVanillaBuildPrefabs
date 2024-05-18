@@ -51,7 +51,7 @@ namespace MVBP.Helpers
                 prefab,
                 desiredBounds.center,
                 desiredBounds.size,
-                local: false
+                local: true
             );
         }
 
