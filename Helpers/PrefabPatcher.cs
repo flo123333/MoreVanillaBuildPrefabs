@@ -94,8 +94,8 @@ namespace MVBP.Helpers
 
                     // Fix missing rudder button attachpoint
                     var shipControls = prefab.FindDeepChild("rudder_button").GetComponent<ShipControlls>();
-                    var rudderAttach = prefab.transform?.Find("sit locations")?.Find("sit_box (4)")?.Find("attachpoint");
-                    if (shipControls && rudderAttach != null)
+                    var rudderAttach = prefab.transform.Find("sit locations").Find("sit_box (4)").Find("attachpoint");
+                    if (shipControls && rudderAttach)
                     {
                         shipControls.m_attachPoint = rudderAttach.transform;
                     }
