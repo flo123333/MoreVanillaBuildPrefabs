@@ -23,6 +23,8 @@ class PrefabConfig:
         "pieceGroup": 13,
         "playerBasePatch": 14,
         "spawnOnDestroyed": 15,
+        "invWidth": 16,
+        "invHeight": 17
     }
 
     _needs_quotes = set(
@@ -51,6 +53,8 @@ class PrefabConfig:
         self.pieceGroup = None
         self.playerBasePatch = None
         self.spawnOnDestroyed = None
+        self.invWidth = None
+        self.invHeight = None
 
     def _sort_attr_names(self, name: str):
         if name not in self._ordering:
