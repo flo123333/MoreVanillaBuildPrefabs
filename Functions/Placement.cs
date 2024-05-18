@@ -211,7 +211,7 @@ namespace MVBP.Functions
             [HarmonyPatch(nameof(Piece.Awake))]
             private static void PieceAwakePostfix(Piece __instance)
             {
-                PrefabPatcher.PatchPlayerBuiltPieceIfNeed(__instance);
+                PlayerPiecePatcher.PatchPlayerBuiltPieceIfNeed(__instance);
             }
 
             /// <summary>
@@ -224,7 +224,7 @@ namespace MVBP.Functions
             [HarmonyPatch(nameof(Piece.SetCreator))]
             private static void PieceSetCreatorPostfix(Piece __instance)
             {
-                PrefabPatcher.PatchPlayerBuiltPieceIfNeed(__instance);
+                PlayerPiecePatcher.PatchPlayerBuiltPieceIfNeed(__instance);
             }
 
             /// <summary>
