@@ -10,6 +10,9 @@ using UnityEngine;
 
 namespace MVBP.Helpers
 {
+    /// <summary>
+    ///     Manages Piece configuration and updating Hammer piece table.
+    /// </summary>
     internal static class PieceHelper
     {
         internal static readonly HashSet<string> AddedPrefabs = new();
