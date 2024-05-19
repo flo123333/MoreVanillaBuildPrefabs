@@ -69,9 +69,11 @@ namespace MVBP.Configs
                 sectionName,
                 "Requirements",
                 defaultVals.requirements,
-                "Resources required to build the prefab. Formatted as: itemID,amount;itemID,amount where itemID is the in-game identifier for the resource and amount is an integer. "
-            );
-     
+                "Resources required to build the prefab. Formatted as: itemID,amount;itemID,amount where itemID is the in-game identifier for the resource and amount is an integer.",
+                acceptVals: new AcceptableValueConfigNote("You must use valid spawn item codes."),
+                drawer: true
+            );           
+
             // if the prefab is not already set to use the placement patch by default
             // then add a config option to enable the placement collision patch.
             if (!defaultVals.placementPatch)
