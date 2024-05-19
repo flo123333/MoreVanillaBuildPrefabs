@@ -3,8 +3,10 @@
 using BepInEx;
 using BepInEx.Bootstrap;
 using BepInEx.Configuration;
+using Jotunn.Configs;
 using MVBP.Extensions;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using UnityEngine;
@@ -47,7 +49,47 @@ namespace MVBP.Configs {
 
         private static readonly ConfigurationManagerAttributes AdminConfig = new() { IsAdminOnly = true };
         private static readonly ConfigurationManagerAttributes ClientConfig = new() { IsAdminOnly = false };
+   
         private const char ZWS = '\u200B';
+
+
+        internal static void Init(string GUID, ConfigFile config, bool saveOnConfigSet = false)
+        {
+            configFile = config;
+            configFile.SaveOnConfigSet = saveOnConfigSet;
+            ConfigFileName = GUID + ".cfg";
+            ConfigFileFullPath = Path.Combine(Paths.ConfigPath, ConfigFileName);
+        }
+
+
+        /// <summary>
+        ///     Sets SaveOnConfigSet to false and returns
+        ///     the Value prior to calling this method.
+        /// </summary>
+        /// <returns></returns>
+        internal static bool DisableSaveOnConfigSet()
+        {
+            var val = configFile.SaveOnConfigSet;
+            configFile.SaveOnConfigSet = false;
+            return val;
+        }
+
+        /// <summary>
+        ///     Set the Value for the SaveOnConfigSet field.
+        /// </summary>
+        /// <param name="value"></param>
+        internal static void SaveOnConfigSet(bool value)
+        {
+            configFile.SaveOnConfigSet = value;
+        }
+
+        /// <summary>
+        ///     Save config file to disk.
+        /// </summary>
+        internal static void Save()
+        {
+            configFile.Save();
+        }
 
         internal static ConfigEntry<T> BindConfig<T>(
             string section,
@@ -80,7 +122,6 @@ namespace MVBP.Configs {
             return configEntry;
         }
 
-
         /// <summary>
         ///     Prepends Zero-Width-Space to set ordering of configuration sections
         /// </summary>
@@ -94,41 +135,6 @@ namespace MVBP.Configs {
 
         internal static string GetExtendedDescription(string description, bool synchronizedSetting) {
             return description + (synchronizedSetting ? " [Synced with Server]" : " [Not Synced with Server]");
-        }
-
-
-        internal static void Init(string GUID, ConfigFile config, bool saveOnConfigSet = false) {
-            configFile = config;
-            configFile.SaveOnConfigSet = saveOnConfigSet;
-            ConfigFileName = GUID + ".cfg";
-            ConfigFileFullPath = Path.Combine(Paths.ConfigPath, ConfigFileName);
-        }
-
-
-        /// <summary>
-        ///     Sets SaveOnConfigSet to false and returns
-        ///     the Value prior to calling this method.
-        /// </summary>
-        /// <returns></returns>
-        internal static bool DisableSaveOnConfigSet() {
-            var val = configFile.SaveOnConfigSet;
-            configFile.SaveOnConfigSet = false;
-            return val;
-        }
-
-        /// <summary>
-        ///     Set the Value for the SaveOnConfigSet field.
-        /// </summary>
-        /// <param name="value"></param>
-        internal static void SaveOnConfigSet(bool value) {
-            configFile.SaveOnConfigSet = value;
-        }
-
-        /// <summary>
-        ///     Save config file to disk.
-        /// </summary>
-        internal static void Save() {
-            configFile.Save();
         }
 
         internal static void SetupWatcher() {
