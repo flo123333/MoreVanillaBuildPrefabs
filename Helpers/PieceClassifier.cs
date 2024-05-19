@@ -217,9 +217,9 @@ namespace MVBP.Helpers
             if (prefab.HasAnyComponent(typeof(WearNTear), typeof(Door)))
             {
                 if (prefabName.Contains("darkwood")) return PieceGroup.Darkwood;
+                if (prefabName.Contains("ashwood")) return PieceGroup.Ashwood;
                 if (prefabName.ContainsAny("wood", "turf")) return PieceGroup.Wood;
                 if (prefabName.Contains("stone")) return PieceGroup.Stone;
-                // if (prefabName.Contains("ashlands")) return PieceGroup.Ashwood;
             }
 
             if (
