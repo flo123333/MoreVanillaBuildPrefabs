@@ -196,6 +196,11 @@ namespace MVBP.Helpers
             "CastleKit_groundtorch_unlit",
             "CastleKit_metal_groundtorch_unlit",
             "dvergrprops_lantern",
+
+            // Duplicate of Dvergr Crate
+            "dvergrprops_crate_ashlands",
+            "Charredfortress_LOD"
+
         };
     }
 }
