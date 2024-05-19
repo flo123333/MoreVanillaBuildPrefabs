@@ -3989,7 +3989,10 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    pieceGroup: PieceGroup.Chest,
+                    invWidth: 5,
+                    invHeight: 2
                 )
             },
             {
@@ -4003,7 +4006,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    pieceGroup: PieceGroup.Chest
                 )
             },
             {
@@ -4019,7 +4023,9 @@ namespace MVBP.Configs
                     clipGround: false,
                     placementPatch: false,
                     pieceName: "Black marble chest",
-                    pieceGroup: PieceGroup.Chest
+                    pieceGroup: PieceGroup.Chest,
+                    invWidth: 8,
+                    invHeight: 4
                 )
             },
             {
@@ -4030,12 +4036,14 @@ namespace MVBP.Configs
                     allowedInDungeons: false,
                     category: HammerCategories.Furniture,
                     craftingStation: nameof(CraftingStations.BlackForge),
-                    requirements: "YggdrasilWood,10;Copper,1",
+                    requirements: "YggdrasilWood,10;Copper,2",
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false,
                     pieceName: "Dvergr chest",
-                    pieceGroup: PieceGroup.Chest
+                    pieceGroup: PieceGroup.Chest,
+                    invWidth: 7,
+                    invHeight: 4
                 )
             },
             {
@@ -4046,12 +4054,14 @@ namespace MVBP.Configs
                     allowedInDungeons: false,
                     category: HammerCategories.Furniture,
                     craftingStation: nameof(CraftingStations.BlackForge),
-                    requirements: "YggdrasilWood,10;Copper,1",
+                    requirements: "YggdrasilWood,10;Copper,6",
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false,
                     pieceName: "Dvergr chest (large)",
-                    pieceGroup: PieceGroup.Chest
+                    pieceGroup: PieceGroup.Chest,
+                    invWidth: 8,
+                    invHeight: 4
                 )
             },
             {
@@ -4067,7 +4077,9 @@ namespace MVBP.Configs
                     clipGround: false,
                     placementPatch: false,
                     pieceName: "Stone chest (mossy)",
-                    pieceGroup: PieceGroup.Chest
+                    pieceGroup: PieceGroup.Chest,
+                    invWidth: 5,
+                    invHeight: 2
                 )
             },
             {
@@ -4083,7 +4095,9 @@ namespace MVBP.Configs
                     clipGround: false,
                     placementPatch: false,
                     pieceName: "Stone chest (snow)",
-                    pieceGroup: PieceGroup.Chest
+                    pieceGroup: PieceGroup.Chest,
+                    invWidth: 6,
+                    invHeight: 3
                 )
             },
             {
@@ -4099,7 +4113,9 @@ namespace MVBP.Configs
                     clipGround: false,
                     placementPatch: false,
                     pieceName: "Stone chest (dark moss)",
-                    pieceGroup: PieceGroup.Chest
+                    pieceGroup: PieceGroup.Chest,
+                    invWidth: 5,
+                    invHeight: 2
                 )
             },
             {
@@ -4110,12 +4126,14 @@ namespace MVBP.Configs
                     allowedInDungeons: false,
                     category: HammerCategories.Furniture,
                     craftingStation: nameof(CraftingStations.Stonecutter),
-                    requirements: "Stone,10;RoundLog,1",
+                    requirements: "Stone,10;RoundLog,2",
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false,
                     pieceName: "Stone chest (mossy, big)",
-                    pieceGroup: PieceGroup.Chest
+                    pieceGroup: PieceGroup.Chest,
+                    invWidth: 6,
+                    invHeight: 3
                 )
             },
             {
@@ -6576,7 +6594,9 @@ namespace MVBP.Configs
                     clipGround: false,
                     placementPatch: false,
                     pieceName: "Stone chest (light moss)",
-                    pieceGroup: PieceGroup.Chest
+                    pieceGroup: PieceGroup.Chest,
+                    invHeight: 2,
+                    invWidth: 5
                 )
             },
             {
