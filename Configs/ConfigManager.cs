@@ -97,7 +97,6 @@ namespace MVBP.Configs {
             ConfigFileFullPath = Path.Combine(Paths.ConfigPath, ConfigFileName);
         }
 
-        #region Saving
 
         /// <summary>
         ///     Sets SaveOnConfigSet to false and returns
