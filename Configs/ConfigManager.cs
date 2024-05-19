@@ -125,10 +125,6 @@ namespace MVBP.Configs {
             configFile.Save();
         }
 
-        #endregion Saving
-
-        #region FileWatcher
-
         internal static void SetupWatcher() {
             var watcher = new FileSystemWatcher(Paths.ConfigPath, ConfigFileName);
             watcher.Changed += ReloadConfigFile;
@@ -161,10 +157,6 @@ namespace MVBP.Configs {
                 Log.LogError("Please check your config entries for spelling and format!");
             }
         }
-
-        #endregion FileWatcher
-
-        #region ConfigWindow
 
         /// <summary>
         ///     Checks for in-game configuration manager and
@@ -202,6 +194,5 @@ namespace MVBP.Configs {
             }
         }
 
-        #endregion ConfigWindow
     }
 }
