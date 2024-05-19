@@ -4404,7 +4404,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: true,
-                    spawnOnDestroyed: sfx_rock_destroyed
+                    spawnOnDestroyed: "sfx_rock_destroyed"
                 )
             },
             {
@@ -6154,7 +6154,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false,
-                    spawnOnDestroyed: fx_crystal_destruction
+                    spawnOnDestroyed: "fx_crystal_destruction"
                 )
             },
             {
@@ -7499,7 +7499,7 @@ namespace MVBP.Configs
                     placementPatch: false,
                     pieceName: "Rock (black, alt)",
                     pieceGroup: PieceGroup.Rock,
-                    spawnOnDestroyed: sfx_rock_destroyed
+                    spawnOnDestroyed: "sfx_rock_destroyed"
                 )
             },
             {
