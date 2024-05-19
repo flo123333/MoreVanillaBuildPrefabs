@@ -3,7 +3,7 @@ MoreVanillaBuildPrefabs is a Valheim mod to make all vanilla prefabs buildable w
 
 **Server-Side Info**: This mod does work as a client-side only mod. It is strongly recommended that you install it on the server you play on if possible though as multiple players with conflicting configurations can result in losing build resources when pieces are deconstructed. Not installing the mod on the server also means that some pieces (like the new ship) may not function well for players without the mod.
 
-**ASHLANDS UPDATE NOTICE:** The Ashlands update changed the name of some piece categories so you will need to either edit your configuration to change "Building" to "BuildingWorkbench" or delete your cfg and let the mod regenerate it. Deleting your cfg file is 
+**ASHLANDS UPDATE NOTICE:** The Ashlands update changed the name of some piece categories so you will need to either edit your configuration to change "Building" to "BuildingWorkbench" or delete your cfg and let the mod regenerate it. All pieces other than fires/explosions are now also patched to be placeable by default. Default building requirements for new pieces and snap points are still a work in progress though.
 
 ## Key Feature
 Because all the added build pieces are pre-existing vanilla prefabs, any pieces you build with this mod will persist in your world even if you uninstall the mod. This means that pieces you build on a server will also be visible for players without the mod and any builds using the pieces from this mod will load for players without the mod.
@@ -616,4 +616,3 @@ If you like this mod you might like some of my other ones.
 - [ProjectileTweaks](https://thunderstore.io/c/valheim/p/Searica/ProjectileTweaks/)
 - [SkilledCarryWeight](https://thunderstore.io/c/valheim/p/Searica/SkilledCarryWeight/)
 - [SafetyStatus](https://thunderstore.io/c/valheim/p/Searica/SafetyStatus/)
-

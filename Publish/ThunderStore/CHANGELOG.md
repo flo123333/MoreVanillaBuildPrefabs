@@ -14,6 +14,8 @@
 					<li>Added new drawer interface for customizing piece requirements in-game.</li>
 					<li>Updated default configuration so everything that is not a fire/explosion is now placeable by default.</li>
 					<li>Improved logic used in the automatic placement patch.</li>
+					<li>Added a feature that modifies the size of chests added by this mod, and the changes will persist even after removing the mod.</li>
+					<li>Added some pieces that would previously self-destruct after being placed as they are now prevented from self-destructing and this prevention persists even after removing this mod.</li>
 				</ul>
 			</td>
 		</tr>
