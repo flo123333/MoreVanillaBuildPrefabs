@@ -21,8 +21,6 @@ namespace MVBP.Configs {
 
         private static DateTime lastRead = DateTime.MinValue;
 
-        #region Events
-
         /// <summary>
         ///     Event triggered after a the in-game configuration manager is closed.
         /// </summary>
@@ -46,10 +44,6 @@ namespace MVBP.Configs {
         private static void InvokeOnConfigFileReloaded() {
             OnConfigFileReloaded?.SafeInvoke();
         }
-
-        #endregion Events
-
-        #region BindConfig
 
         private static readonly ConfigurationManagerAttributes AdminConfig = new() { IsAdminOnly = true };
         private static readonly ConfigurationManagerAttributes ClientConfig = new() { IsAdminOnly = false };
@@ -95,7 +89,6 @@ namespace MVBP.Configs {
             return description + (synchronizedSetting ? " [Synced with Server]" : " [Not Synced with Server]");
         }
 
-        #endregion BindConfig
 
         internal static void Init(string GUID, ConfigFile config, bool saveOnConfigSet = false) {
             configFile = config;
