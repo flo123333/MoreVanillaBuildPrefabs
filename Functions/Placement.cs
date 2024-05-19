@@ -111,7 +111,9 @@ namespace MVBP.Functions
                     selectedPrefab.GetComponent<AnimalAI>() ||
                     selectedPrefab.GetComponent<Tameable>() ||
                     selectedPrefab.GetComponent<Ragdoll>() ||
-                    selectedPrefab.GetComponent<Humanoid>())
+                    selectedPrefab.GetComponent<Humanoid>() ||
+                    selectedPrefab.GetComponent<TimedDestruction>() 
+                )
                 {
                     setActive = selectedPrefab.activeSelf;
                     selectedPrefab.SetActive(false);
@@ -156,6 +158,10 @@ namespace MVBP.Functions
                 if (clonedPrefab.TryGetComponent(out Ragdoll ragdoll))
                 {
                     UnityEngine.Object.DestroyImmediate(ragdoll);
+                }
+                if (clonedPrefab.TryGetComponent(out TimedDestruction timedDestruction))
+                {
+                    UnityEngine.Object.DestroyImmediate(timedDestruction);
                 }
 
                 if (clonedPrefab.TryGetComponent(out Humanoid humanoid))
