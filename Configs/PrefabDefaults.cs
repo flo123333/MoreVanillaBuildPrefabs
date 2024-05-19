@@ -4124,9 +4124,9 @@ namespace MVBP.Configs
                     clipGround: false,
                     placementPatch: false,
                     pieceName: "Trader ship",
-                    pieceGroup: PieceGroup.Ship,
-                    invWidth: 8,
-                    invHeight: 4
+                    pieceGroup: PieceGroup.Ship
+                    //invWidth: 6,
+                    //invHeight: 4
                 )
             },
             {
