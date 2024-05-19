@@ -8,9 +8,11 @@
 			<th align="center">Notes</th>
 		</tr>
 		<tr>
-			<td align="center">1.2.1</td>
+			<td align="center">1.2.2</td>
 			<td align="left">
 				<ul>
+					<li>Added new drawer interface for customizing piece requirements in-game.</li>
+					<li>Updated default configuration so everything that is not a fire/explosion is now placeable by default.</li>
 					<li>Improved logic used in the automatic placement patch.</li>
 				</ul>
 			</td>
