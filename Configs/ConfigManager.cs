@@ -56,9 +56,16 @@ namespace MVBP.Configs {
             string description,
             AcceptableValueBase acceptVals = null,
             bool synced = true,
+            bool drawer = false,
             int order = 0
         ) {
             string extendedDescription = GetExtendedDescription(description, synced);
+
+            var configAttr = new ConfigurationManagerAttributes() { Order = order };
+            if (drawer) {
+                configAttr.CustomDrawer = SharedDrawers.DrawReqConfigTable();
+            }
+
             ConfigEntry<T> configEntry = configFile.Bind(
                 section,
                 name,
@@ -67,7 +74,7 @@ namespace MVBP.Configs {
                     extendedDescription,
                     acceptVals,
                     synced ? AdminConfig : ClientConfig,
-                    new ConfigurationManagerAttributes() { Order = order }
+                    configAttr
                 )
             );
             return configEntry;
