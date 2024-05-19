@@ -9,40 +9,10 @@ using UnityEngine;
 namespace MVBP.Helpers {
 
     /// <summary>
-    ///     Handles parsing requirements.
+    ///     Handles modifying piece requirements.
     /// </summary>
     internal static class RequirementsHelper {
-        /// <summary>
-        ///     Convert requirements string from cfg file to Piece.Requirement Array
-        /// </summary>
-        /// <param name="data"></param>
-        /// <returns></returns>
-        internal static Piece.Requirement[] CreateRequirementsArray(string data) {
-            // avoid calling Trim() on null object
-            if (data == null || string.IsNullOrEmpty(data.Trim())) {
-                return Array.Empty<Piece.Requirement>();
-            }
-
-            // If not empty
-            List<Piece.Requirement> requirements = new();
-
-            foreach (var entry in data.Split(';')) {
-                string[] values = entry.Split(',');
-                var itm = ObjectDB.instance.GetItemPrefab(values[0].Trim())?.GetComponent<ItemDrop>();
-                if (itm == null) {
-                    Log.LogWarning($"Unable to find requirement ID: {values[0].Trim()}");
-                    continue;
-                }
-                Piece.Requirement req = new() {
-                    m_resItem = itm,
-                    m_amount = int.Parse(values[1].Trim()),
-                    m_recover = true
-                };
-                requirements.Add(req);
-            }
-            return requirements.ToArray();
-        }
-
+    
         /// <summary>
         ///     If the pickable is not null and drops an item, then modify the
         ///     requirements array to require the item dropped by the pickable to
