@@ -55,6 +55,11 @@ namespace MVBP.Configs
             var requirements = new List<Piece.Requirement>();
             foreach (RequirementConfig reqData in reqsData)
             {
+                if (reqData.Item == " ")
+                {
+                    continue;
+                }
+
                 var itm = ObjectDB.instance.GetItemPrefab(reqData.Item)?.GetComponent<ItemDrop>();
                 if (itm == null)
                 {
