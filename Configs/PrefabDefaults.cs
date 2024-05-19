@@ -91,7 +91,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -105,7 +105,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -133,7 +133,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -147,7 +147,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -161,7 +161,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -173,9 +173,10 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, 1f, 0f)
                 )
             },
             {
@@ -187,9 +188,10 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, 1f, 0f)
                 )
             },
             {
@@ -201,7 +203,7 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -215,9 +217,10 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, 0.5f, 0f)
                 )
             },
             {
@@ -229,7 +232,7 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -243,9 +246,10 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    pieceGroup: PieceGroup.Flora
                 )
             },
             {
@@ -259,7 +263,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    pieceGroup: PieceGroup.Flora
                 )
             },
             {
@@ -273,7 +278,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    pieceGroup: PieceGroup.Flora
                 )
             },
             {
@@ -287,7 +293,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    pieceGroup: PieceGroup.Flora
                 )
             },
             {
@@ -301,7 +308,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    pieceGroup: PieceGroup.Flora
                 )
             },
             {
@@ -315,7 +323,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    pieceGroup: PieceGroup.Flora
                 )
             },
             {
@@ -329,7 +338,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    pieceGroup: PieceGroup.Flora
                 )
             },
             {
@@ -341,9 +351,10 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: false,
+                    pieceGroup: PieceGroup.Flora
                 )
             },
             {
@@ -427,7 +438,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -497,7 +508,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -567,8 +578,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
-                    // placementOffset: new Vector3(0f, -0.1f, 0f)
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -582,8 +593,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
-                    // placementOffset: new Vector3(0f, -0.1f, 0f)
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -597,8 +608,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
-                    // placementOffset: new Vector3(0f, -0.1f, 0f)
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -612,8 +623,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
-                    // placementOffset: new Vector3(0f, -0.1f, 0f)
+                    placementPatch: true,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -627,8 +638,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
-                    // placementOffset: new Vector3(0f, -0.1f, 0f)
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -642,8 +653,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
-                    // placementOffset: new Vector3(0f, -0.1f, 0f)
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -657,8 +668,8 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
-                    // placementOffset: new Vector3(0f, -0.1f, 0f)
+                    placementPatch: false,
+                    placementOffset: new Vector3(0f, -0.1f, 0f)
                 )
             },
             {
@@ -966,7 +977,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -1162,7 +1173,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -1610,7 +1621,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false,
+                    placementPatch: true,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -1625,7 +1636,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false,
+                    placementPatch: true,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -1640,7 +1651,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false,
+                    placementPatch: true,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -1655,7 +1666,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -1669,7 +1680,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false,
+                    placementPatch: true,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -1684,7 +1695,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false,
+                    placementPatch: true,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -1699,7 +1710,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false,
+                    placementPatch: true,
                     pieceGroup: PieceGroup.Misc
                 )
             },
@@ -1883,9 +1894,9 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -1901,6 +1912,62 @@ namespace MVBP.Configs
                     clipGround: false,
                     placementPatch: false,
                     pieceGroup: PieceGroup.Chest
+                )
+            },
+            {
+                "Cinder",
+                new PrefabDB(
+                    name: "Cinder",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: true
+                )
+            },
+            {
+                "CinderSky",
+                new PrefabDB(
+                    name: "CinderSky",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "CinderStorm",
+                new PrefabDB(
+                    name: "CinderStorm",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "Cinder_campfire",
+                new PrefabDB(
+                    name: "Cinder_campfire",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2027,7 +2094,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -2133,6 +2200,34 @@ namespace MVBP.Configs
                     clipGround: false,
                     placementPatch: false,
                     pieceGroup: PieceGroup.Flora
+                )
+            },
+            {
+                "Fire",
+                new PrefabDB(
+                    name: "Fire",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "FireFlies",
+                new PrefabDB(
+                    name: "FireFlies",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -2291,6 +2386,20 @@ namespace MVBP.Configs
                 )
             },
             {
+                "HouseFire",
+                new PrefabDB(
+                    name: "HouseFire",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
                 "HugeRoot1",
                 new PrefabDB(
                     name: "HugeRoot1",
@@ -2306,6 +2415,20 @@ namespace MVBP.Configs
                 )
             },
             {
+                "IceBlocker",
+                new PrefabDB(
+                    name: "IceBlocker",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
                 "Ice_floor",
                 new PrefabDB(
                     name: "Ice_floor",
@@ -2317,6 +2440,20 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: true,
                     placementPatch: false
+                )
+            },
+            {
+                "LavaRock",
+                new PrefabDB(
+                    name: "LavaRock",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: true,
+                    clipGround: false,
+                    placementPatch: true
                 )
             },
             {
@@ -2342,7 +2479,7 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -3739,6 +3876,20 @@ namespace MVBP.Configs
                 )
             },
             {
+                "SeekerQueen_spithit",
+                new PrefabDB(
+                    name: "SeekerQueen_spithit",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
                 "ShootStump",
                 new PrefabDB(
                     name: "ShootStump",
@@ -3955,7 +4106,7 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -4007,7 +4158,9 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false,
-                    pieceGroup: PieceGroup.Chest
+                    pieceGroup: PieceGroup.Chest,
+                    invWidth: 8,
+                    invHeight: 4
                 )
             },
             {
@@ -4250,8 +4403,8 @@ namespace MVBP.Configs
                     requirements: "BlackMarble,100",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false,
-                    spawnOnDestroyed: "sfx_rock_destroyed"
+                    placementPatch: true,
+                    spawnOnDestroyed: sfx_rock_destroyed
                 )
             },
             {
@@ -5016,7 +5169,7 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -5032,7 +5185,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -5044,7 +5197,7 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -5058,7 +5211,7 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -5072,7 +5225,7 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -5086,7 +5239,7 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -5100,7 +5253,7 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -5244,6 +5397,20 @@ namespace MVBP.Configs
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
+                )
+            },
+            {
+                "dead_deer",
+                new PrefabDB(
+                    name: "dead_deer",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -5987,7 +6154,7 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false,
-                    spawnOnDestroyed: "fx_crystal_destruction"
+                    spawnOnDestroyed: fx_crystal_destruction
                 )
             },
             {
@@ -6576,6 +6743,20 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
+                    clipEverything: true,
+                    clipGround: false,
+                    placementPatch: true
+                )
+            },
+            {
+                "lightningAOE",
+                new PrefabDB(
+                    name: "lightningAOE",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
                     clipEverything: false,
                     clipGround: false,
                     placementPatch: false
@@ -6595,8 +6776,8 @@ namespace MVBP.Configs
                     placementPatch: false,
                     pieceName: "Stone chest (light moss)",
                     pieceGroup: PieceGroup.Chest,
-                    invHeight: 2,
-                    invWidth: 5
+                    invWidth: 5,
+                    invHeight: 2
                 )
             },
             {
@@ -6809,14 +6990,14 @@ namespace MVBP.Configs
                 "piece_blackwood_bench",
                 new PrefabDB(
                     name: "piece_blackwood_bench",
-                    enabled: false,
+                    enabled: true,
                     allowedInDungeons: false,
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
@@ -7157,7 +7338,7 @@ namespace MVBP.Configs
                     category: HammerCategories.CreatorShop,
                     craftingStation: nameof(CraftingStations.None),
                     requirements: "",
-                    clipEverything: false,
+                    clipEverything: true,
                     clipGround: false,
                     placementPatch: false
                 )
@@ -7318,7 +7499,7 @@ namespace MVBP.Configs
                     placementPatch: false,
                     pieceName: "Rock (black, alt)",
                     pieceGroup: PieceGroup.Rock,
-                    spawnOnDestroyed: "sfx_rock_destroyed"
+                    spawnOnDestroyed: sfx_rock_destroyed
                 )
             },
             {
@@ -7408,6 +7589,20 @@ namespace MVBP.Configs
                     clipEverything: false,
                     clipGround: false,
                     pieceGroup: PieceGroup.Rug
+                )
+            },
+            {
+                "shieldgenerator_attack",
+                new PrefabDB(
+                    name: "shieldgenerator_attack",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -7568,6 +7763,20 @@ namespace MVBP.Configs
                     clipGround: false,
                     placementPatch: false,
                     pieceGroup: PieceGroup.Ore
+                )
+            },
+            {
+                "smokebomb_explosion",
+                new PrefabDB(
+                    name: "smokebomb_explosion",
+                    enabled: false,
+                    allowedInDungeons: false,
+                    category: HammerCategories.CreatorShop,
+                    craftingStation: nameof(CraftingStations.None),
+                    requirements: "",
+                    clipEverything: false,
+                    clipGround: false,
+                    placementPatch: false
                 )
             },
             {
@@ -7745,7 +7954,7 @@ namespace MVBP.Configs
                     requirements: "",
                     clipEverything: false,
                     clipGround: false,
-                    placementPatch: false
+                    placementPatch: true
                 )
             },
             {
