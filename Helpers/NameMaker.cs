@@ -28,6 +28,11 @@ namespace MVBP.Helpers
         private static readonly Regex CreepToEndRegex = new(@"(.+?)(creep)(.*)");
 
         /// <summary>
+        ///     Matches (text)( alt )(text)
+        /// </summary>
+        private static readonly Regex AltToEndRegex = new(@"(.+?)( alt )(.*)");
+
+        /// <summary>
         ///     Matches sequences of whitespace
         /// </summary>
         private static readonly Regex WhiteSpaceRegex = new(@" +");
@@ -154,7 +159,7 @@ namespace MVBP.Helpers
             if (name.EndsWithAny("26", "45")){
                 name = string.Concat(name, "\u00B0");
             }
-
+              
             name = IsLastCharDigit.Replace(name, " ($1)");
             name = WhiteSpaceRegex.Replace(name, " ");
             name = name.CapitalizeFirstLetter();
