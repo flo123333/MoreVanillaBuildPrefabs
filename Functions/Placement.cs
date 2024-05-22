@@ -99,6 +99,10 @@ namespace MVBP.Functions
 
             private static GameObject SetupPlacementGhostInstantiateDelegate(GameObject selectedPrefab)
             {
+                if (!selectedPrefab) // selected prefab is null, probably due to some other mod nonsense
+                {
+                    return selectedPrefab;
+                }
                 if (!InitManager.IsPatchedByMod(selectedPrefab))
                 {
                     // ignore pieces not touched by this mod
