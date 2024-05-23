@@ -144,7 +144,10 @@ namespace MVBP
         /// <returns></returns>
         internal static string GetPrefabName(Component compo)
         {
-            return GetPrefabName(compo?.gameObject);
+            if (!compo){
+                return string.Empty;
+            }
+            return GetPrefabName(compo.gameObject);
         }
 
         /// <summary>
