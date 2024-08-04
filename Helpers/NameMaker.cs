@@ -1,15 +1,19 @@
 ﻿// Ignore Spelling: MVBP
 
-using MVBP.Configs;
-using MVBP.Extensions;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using MVBP.Configs;
+using MVBP.Extensions;
+
 
 namespace MVBP.Helpers
 {
     internal static class NameMaker
     {
+        private static TextInfo EngTextInfo = new CultureInfo("en-US", false).TextInfo;
+
         /// <summary>
         ///     Matches (text)(#)(text) but only if the # is not preceded by an "x"
         ///     and not followed by an "x", "m", or "°"
@@ -162,7 +166,8 @@ namespace MVBP.Helpers
               
             name = IsLastCharDigit.Replace(name, " ($1)");
             name = WhiteSpaceRegex.Replace(name, " ");
-            name = name.CapitalizeFirstLetter();
+            //name = name.CapitalizeFirstLetter();
+            name = EngTextInfo.ToTitleCase(name);
 
             NameCache[pieceDB.name] = name;
             return name;
