@@ -8,6 +8,16 @@
 			<th align="center">Notes</th>
 		</tr>
 		<tr>
+			<td align="center">1.2.3</td>
+			<td align="left">
+				<ul>
+					<li>Updated naming scheme to match new piece name capitalization.</li>
+					<li>Updated dependencies.</li>
+					<li>Fixed issue with Verbosity settings in config not saving correctly.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
 			<td align="center">1.2.2</td>
 			<td align="left">
 				<ul>

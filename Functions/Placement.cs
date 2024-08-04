@@ -40,8 +40,8 @@ namespace MVBP.Functions
                 ).MakeGenericMethod(typeof(GameObject));
 
                 var codeMatches = new CodeMatch[] {
-                new CodeMatch(OpCodes.Call, instantiateMethod)
-            };
+                    new CodeMatch(OpCodes.Call, instantiateMethod)
+                };
 
                 return new CodeMatcher(instructions)
                     .MatchForward(useEnd: true, codeMatches)
@@ -99,6 +99,10 @@ namespace MVBP.Functions
 
             private static GameObject SetupPlacementGhostInstantiateDelegate(GameObject selectedPrefab)
             {
+                if (!selectedPrefab) // selected prefab is null, probably due to some other mod nonsense
+                {
+                    return selectedPrefab;
+                }
                 if (!InitManager.IsPatchedByMod(selectedPrefab))
                 {
                     // ignore pieces not touched by this mod

@@ -202,6 +202,7 @@ namespace MVBP.Configs {
             bool ConfigurationManagerWindowShown = (bool)pi.GetValue(ConfigurationManager, null);
 
             if (!ConfigurationManagerWindowShown) {
+                // OnConfigWindowClosed.Invoke();
                 InvokeOnConfigWindowClosed();
             }
         }

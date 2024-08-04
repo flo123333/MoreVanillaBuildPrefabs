@@ -144,7 +144,10 @@ namespace MVBP
         /// <returns></returns>
         internal static string GetPrefabName(Component compo)
         {
-            return GetPrefabName(compo?.gameObject);
+            if (!compo){
+                return string.Empty;
+            }
+            return GetPrefabName(compo.gameObject);
         }
 
         /// <summary>
@@ -495,7 +498,8 @@ namespace MVBP
             // Don't update unless settings have actually changed
             if (!MorePrefabs.UpdatePieceSettings &&
                 !MorePrefabs.UpdatePlacementSettings &&
-                !MorePrefabs.UpdateSeasonalSettings)
+                !MorePrefabs.UpdateSeasonalSettings &&
+                !MorePrefabs.UpdateModSettings)
             {
                 return;
             }
@@ -529,7 +533,7 @@ namespace MVBP
                 Log.LogInfo("Re-initializing complete");
             }
 
-            if (MorePrefabs.UpdatePieceSettings)
+            if (MorePrefabs.UpdatePieceSettings || MorePrefabs.UpdateSeasonalSettings)
             {
                 ModCompat.UpdateExtraSnaps();
                 ModCompat.UpdatePlanBuild();
@@ -538,6 +542,7 @@ namespace MVBP
             MorePrefabs.UpdatePieceSettings = false;
             MorePrefabs.UpdatePlacementSettings = false;
             MorePrefabs.UpdateSeasonalSettings = false;
+            MorePrefabs.UpdateModSettings = false;
 
             if (saveConfig) { ConfigManager.Save(); }
         }
