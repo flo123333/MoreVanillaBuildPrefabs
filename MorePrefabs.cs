@@ -174,7 +174,7 @@ namespace MVBP
             Game.isModded = true;
 
             ConfigManager.SetupWatcher();
-            ConfigManager.CheckForConfigManager();
+            //ConfigManager.CheckForConfigManager();
 
             // Re-initialization after reloading config and don't save since file was just reloaded
             ConfigManager.OnConfigFileReloaded += () =>
@@ -183,7 +183,16 @@ namespace MVBP
             };
 
             // Re-initialize after changing config data in-game and trigger a save to disk.
-            ConfigManager.OnConfigWindowClosed += () => InitManager.UpdatePlugin("Configuration changed in-game, re-initializing");
+            //ConfigManager.OnConfigWindowClosed += () => InitManager.UpdatePlugin("Configuration changed in-game, re-initializing");
+            SynchronizationManager.OnConfigurationWindowClosed += () =>
+            {
+                //var watch = new System.Diagnostics.Stopwatch();
+                //watch.Start();
+                //Log.LogInfo("Start OnConfigurationWindowClosed");
+                InitManager.UpdatePlugin("Configuration changed in-game, re-initializing");
+                //watch.Stop();
+                //Log.LogInfo($"Time to complete: {watch.ElapsedMilliseconds} ms");
+            };
 
             // Re-initialize after getting updated config data and trigger a save to disk.
             SynchronizationManager.OnConfigurationSynchronized += (obj, attr) =>
