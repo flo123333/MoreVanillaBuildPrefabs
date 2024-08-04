@@ -186,12 +186,8 @@ namespace MVBP
             //ConfigManager.OnConfigWindowClosed += () => InitManager.UpdatePlugin("Configuration changed in-game, re-initializing");
             SynchronizationManager.OnConfigurationWindowClosed += () =>
             {
-                //var watch = new System.Diagnostics.Stopwatch();
-                //watch.Start();
-                //Log.LogInfo("Start OnConfigurationWindowClosed");
+                // TestEvent();
                 InitManager.UpdatePlugin("Configuration changed in-game, re-initializing");
-                //watch.Stop();
-                //Log.LogInfo($"Time to complete: {watch.ElapsedMilliseconds} ms");
             };
 
             // Re-initialize after getting updated config data and trigger a save to disk.
@@ -200,6 +196,11 @@ namespace MVBP
                 InitManager.UpdatePlugin("Configuration synced, re-initializing");
             };
         }
+
+        //private static void TestEvent()
+        //{
+        //    return;
+        //}
 
         public void OnDestroy()
         {
