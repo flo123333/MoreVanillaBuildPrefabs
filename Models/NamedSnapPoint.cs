@@ -2,7 +2,7 @@
 
 namespace MVBP.Models;
 
-internal class NamedSnapPoint
+internal sealed class NamedSnapPoint
 {
     public Vector3 LocalPosition { get; }
     public string Name { get; }
