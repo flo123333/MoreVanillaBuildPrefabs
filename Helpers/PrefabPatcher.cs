@@ -789,9 +789,10 @@ namespace MVBP.Helpers
                 case "dvergrprops_hooknchain":
                     SnapPointHelper.AddSnapPoints(
                         prefab,
-                        new Vector3[]
+                        new NamedSnapPoint[]
                         {
-                            new(0.0f, 2.5f, 0.0f)
+                            new(0.0f, 2.5f, 0.0f, TOP),
+                            new(0.0f,-2.0f, 0.0f, "Hook")
                         }
                     );
                     break;
