@@ -792,7 +792,7 @@ namespace MVBP.Helpers
                         new NamedSnapPoint[]
                         {
                             new(0.0f, 2.5f, 0.0f, TOP),
-                            new(0.0f,-2.0f, 0.0f, "Hook")
+                            new(0.0f,-2.0f, 0.0f, "Hook") // TODO: See how this behaves and if I want to keep it.
                         }
                     );
                     break;
